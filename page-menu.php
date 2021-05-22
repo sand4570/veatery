@@ -23,9 +23,11 @@ get_header();
 <template>
     <article class="article">
         <img src="" alt="" class="image">
+        <div id="txt">
         <h2 class="title"></h2>
         <h3 class="subtitle"></h3>
         <p class="beskrivelse"></p>
+            </div>
     </article>
 </template>
 
