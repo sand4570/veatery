@@ -12,18 +12,16 @@ Author:      Sandie Petersen
 
 /* MENU */
 
-.article {
+#art-menu {
     display: flex;
     flex-direction: column-reverse;
 }
 
 @media screen and (min-width:380px) {
-    #menu-main {
+    #menu-main {}
 
-    }
-
-    .article {
-       display: grid;
+    #art-menu {
+        display: grid;
         grid-template-columns: 1fr 2fr;
     }
 
@@ -37,3 +35,112 @@ Author:      Sandie Petersen
 }
 
 /* MENU SLUT */
+
+/* BESTILLING */
+
+/** bestilling personlige oplysninger **/
+#info-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#p1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#f-name {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#p2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#e-name {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#p3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+#mail {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+#p4 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+#phone {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+/** bestilling personlige oplysninger slut **/
+
+/** bestilling maden **/
+
+#art-order {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#day {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+#food {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#number {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+/** bestilling maden slut **/
+
+@media screen and (min-width:380px) {
+
+    #info-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #art-order {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #day {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #food {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #number {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+}
+
+/* BESTILLING SLUT */

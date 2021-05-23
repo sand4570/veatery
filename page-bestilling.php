@@ -20,13 +20,13 @@ get_header();
 <section id="info">
     <h2>Personlig information</h2>
     <div id="info-container">
-        <p>Fornavn</p>
+        <p id="p1">Fornavn</p>
         <input id="f-name" type="text">
-        <p>Efternavn</p>
+        <p id="p2">Efternavn</p>
         <input id="e-name" type="text">
-        <p>E-mail</p>
+        <p id="p3">E-mail</p>
         <input id="mail" type="email">
-        <p>Telefon</p>
+        <p id="p4">Telefon</p>
         <input id="phone" type="tel">
     </div>
 </section>
@@ -56,7 +56,7 @@ get_header();
 </section>
 
 <template>
-    <article class="article">
+    <article id="art-order" class="article">
         <p id="day"></p>
         <p id="food"></p>
         <input type="number">
