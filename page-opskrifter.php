@@ -75,11 +75,12 @@ get_header();
 
 
     function filtrering() {
-        filterOps = this.dataset.podcast;
+        filterOps = this.dataset.opskrift;
         console.log("filterOps");
         document.querySelector(".valgt").classList.remove("valgt");
         this.classList.add("valgt");
 
+        showRecipe();
 
     }
 
@@ -89,7 +90,7 @@ get_header();
 
         recipeMain.innerHTML = "";
         recipes.forEach(recipe => {
-            if (filterOps == "alle" || recipes.categories.includes(parseInt(filterOps))) {
+            if (filterOps == "alle" || recipe.categories.includes(parseInt(filterOps))) {
 
                 const klon = temp.cloneNode(true).content;
                 klon.querySelector("img").src = recipe.billede.guid;
