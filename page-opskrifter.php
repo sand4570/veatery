@@ -33,7 +33,7 @@ get_header();
 <script>
     let recipes;
     let categories;
-    let filterPod = "alle";
+    let filterOps = "alle";
 
     const temp = document.querySelector("template");
     const recipeMain = document.querySelector("#recipe-main");
@@ -75,18 +75,21 @@ get_header();
 
 
     function filtrering() {
-        filterPod = this.dataset.podcast;
-        console.log("filterPod");
+        filterOps = this.dataset.podcast;
+        console.log("filterOps");
         document.querySelector(".valgt").classList.remove("valgt");
         this.classList.add("valgt");
+
+
     }
 
     function showRecipe() {
         console.log(recipes);
+        console.log("opskrifter");
 
         recipeMain.innerHTML = "";
         recipes.forEach(recipe => {
-            if (filterPod == "alle" || recipes.categories.includes(parseInt(filterPod))) {
+            if (filterOps == "alle" || recipes.categories.includes(parseInt(filterOps))) {
 
                 const klon = temp.cloneNode(true).content;
                 klon.querySelector("img").src = recipe.billede.guid;
