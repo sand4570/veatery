@@ -24,7 +24,7 @@ get_header();
 <section id="recipe-main"></section>
 
 <template>
-    <article class="artickle">
+    <article class="article">
         <img src="" alt="" class="image">
         <h2 class="title"></h2>
     </article>
