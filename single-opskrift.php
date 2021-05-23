@@ -2,9 +2,20 @@
 /**
  * The template for displaying all single posts.
  *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package OnePress
  */
 
-get_header(); ?>
+get_header();
+$layout = onepress_get_layout();
+
+/**
+ * @since 2.0.0
+ * @see onepress_display_page_title
+ */
+do_action( 'onepress_page_before_content' );
+?>
 
 <section id="primary" class="content-area">
     <main id="main" class="site-main">

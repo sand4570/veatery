@@ -49,9 +49,9 @@ get_header();
 <section id="payment">
     <h2>Betalling</h2>
     <input type="radio" id="pay1" name="payment" value="0">
-    <label for="del1">Kontant ved afhentning</label><br>
-    <input type="radio" id="del2" name="delivery" value="1">
-    <label for="del2">Mobilepay</label>
+    <label for="pay1">Kontant ved afhentning</label><br>
+    <input type="radio" id="pay2" name="payment" value="1">
+    <label for="pay2">Mobilepay</label>
 
 </section>
 
