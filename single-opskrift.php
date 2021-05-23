@@ -72,7 +72,7 @@ do_action( 'onepress_page_before_content' );
 
     function visOpskrifter() {
         console.log("visOpskrifter");
-        document.querySelector(".title").textContent = opskrift.title.rendered;
+        document.querySelector(".title").textContent = opskrift.title;
         document.querySelector(".description").textContent = opskrift.beskrivelse;
         //document.querySelector(".txt").textContent = podcast.beskrivelse;
         //        document.querySelector("img").src = opskrift.billede.guid;
