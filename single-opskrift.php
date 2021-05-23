@@ -21,20 +21,20 @@ do_action( 'onepress_page_before_content' );
     <main id="main" class="site-main">
         <button class="singletilbage">Tilbage</button>
 
-        <article>
-            <!--
+        <article id="opskriftgrid">
+
             <div id="col-left">
                 <img src="" alt="" class="billede">
                 <div>
-                    <p class="ingredients"></p>
                     <img src="" alt="" class="ikon1">
                     <img src="" alt="" class="ikon2">
                     <img src="" alt="" class="ikon3">
                 </div>
             </div>
--->
+
             <div id="col-right">
                 <h2 class="title"></h2>
+                <p class="ingredients"></p>
                 <p class="description"></p>
             </div>
         </article>
@@ -50,7 +50,7 @@ do_action( 'onepress_page_before_content' );
 
 
 
-    const dbUrl = "https://neanderpetersen.dk/kea/10_eksamen/veatery/wp-json/wp/v2/opskrift" + aktuelopskrift;
+    const dbUrl = "https://neanderpetersen.dk/kea/10_eksamen/veatery/wp-json/wp/v2/opskrift/" + aktuelopskrift;
     //const episodeUrl = "https://neanderpetersen.dk/kea/09_cms/radioloud/wp-json/wp/v2/episoder?per_page=100";
 
     //const container = document.querySelector("#episoder")
@@ -72,10 +72,13 @@ do_action( 'onepress_page_before_content' );
 
     function visOpskrifter() {
         console.log("visOpskrifter");
-        document.querySelector(".title").textContent = opskrift.title;
-        document.querySelector(".description").textContent = opskrift.beskrivelse;
-        //document.querySelector(".txt").textContent = podcast.beskrivelse;
-        //        document.querySelector("img").src = opskrift.billede.guid;
+        document.querySelector(".title").textContent = opskrift.title.rendered;
+        document.querySelector(".description").textContent = opskrift.fremgang;
+        document.querySelector(".ingredients").textContent = opskrift.ingredienser;
+        document.querySelector(".billede").src = opskrift.billede.guid;
+        //        document.querySelector(".ikon1").src = opskrift.billede.guid;
+        //        document.querySelector(".ikon2").src = opskrift.billede.guid;
+        //        document.querySelector(".ikon3").src = opskrift.billede.guid;
 
     }
 
@@ -103,16 +106,16 @@ do_action( 'onepress_page_before_content' );
     //        })
     //    }
 
-    //tilbageKnap();
+    tilbageKnap();
     //sendeplanKnap();
 
-    //    function tilbageKnap() {
-    //        document.querySelector(".singletilbage").addEventListener("click", visTilbage);
-    //    }
-    //
-    //    function visTilbage() {
-    //        window.history.back();
-    //    }
+    function tilbageKnap() {
+        document.querySelector(".singletilbage").addEventListener("click", visTilbage);
+    }
+
+    function visTilbage() {
+        window.history.back();
+    }
 
     //    function sendeplanKnap() {
     //        document.querySelector("#sendeplan-knap").addEventListener("click", () => {

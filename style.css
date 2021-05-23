@@ -17,6 +17,12 @@ Author:      Sandie Petersen
     flex-direction: column-reverse;
 }
 
+#opskriftgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
 /** media query for menu web **/
 @media screen and (min-width:380px) {
     #menu-main {}
