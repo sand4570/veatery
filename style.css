@@ -10,3 +10,18 @@ Author:      Sandie Petersen
 
 /* GENNEREL SLUT */
 
+/* MENU */
+
+.article {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media screen and (min-width:375px) {
+    #menu-main {
+        margin: 10%;
+        background-color: fuchsia;
+    }
+}
+
+/* MENU SLUT */
