@@ -24,10 +24,10 @@ get_header();
     <article class="article">
         <img src="" alt="" class="image">
         <div id="txt">
-        <h2 class="title"></h2>
-        <h3 class="subtitle"></h3>
-        <p class="beskrivelse"></p>
-            </div>
+            <h2 class="title"></h2>
+            <h3 class="subtitle"></h3>
+            <p class="beskrivelse"></p>
+        </div>
     </article>
 </template>
 
@@ -57,13 +57,13 @@ get_header();
 
         menu.forEach(menu => {
 
-                const klon = temp.cloneNode(true).content;
-                klon.querySelector("img").src = menu.billede.guid;
-                klon.querySelector("h2").textContent = menu.title.rendered;
-                klon.querySelector("h3").textContent = menu.titel;
-                klon.querySelector("p").textContent = menu.beskrivelse;
+            const klon = temp.cloneNode(true).content;
+            klon.querySelector("img").src = menu.billede.guid;
+            klon.querySelector("h2").textContent = menu.title.rendered;
+            klon.querySelector("h3").textContent = menu.titel;
+            klon.querySelector("p").textContent = menu.beskrivelse;
 
-                menuMain.appendChild(klon);
+            menuMain.appendChild(klon);
         })
     }
 

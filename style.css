@@ -17,10 +17,22 @@ Author:      Sandie Petersen
     flex-direction: column-reverse;
 }
 
-@media screen and (min-width:375px) {
+@media screen and (min-width:380px) {
     #menu-main {
-        margin: 10%;
-        background-color: fuchsia;
+
+    }
+
+    .article {
+       display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .image {
+        grid-column: 1 / 2;
+    }
+
+    #txt {
+        grid-column: 2 / 3;
     }
 }
 
