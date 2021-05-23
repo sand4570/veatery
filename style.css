@@ -17,6 +17,7 @@ Author:      Sandie Petersen
     flex-direction: column-reverse;
 }
 
+/** media query for menu web **/
 @media screen and (min-width:380px) {
     #menu-main {}
 
@@ -39,6 +40,7 @@ Author:      Sandie Petersen
 /* BESTILLING */
 
 /** bestilling personlige oplysninger **/
+
 #info-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -110,9 +112,9 @@ Author:      Sandie Petersen
     grid-row: 2 / 3;
 }
 
-
 /** bestilling maden slut **/
 
+/** media query for bestilling web **/
 @media screen and (min-width:380px) {
 
     #info-container {
