@@ -59,12 +59,17 @@ get_header();
     <article id="art-order" class="article">
         <p id="day"></p>
         <p id="food"></p>
-        <input type="number">
+        <div id="counter">
+            <button class="minus" data-order-amount="" onclick="minus(this.dataset.orderAmount)">-</button>
+            <input type="number" id="order-amount-" class="number" min=0>
+            <button class="plus" data-order-amount="" onclick="plus(this.dataset.orderAmount)">+</button>
+        </div>
     </article>
 </template>
 
 <script>
     let order;
+    let count = 0
 
     const temp = document.querySelector("template");
     const foodSection = document.querySelector("#food-section");
@@ -87,16 +92,32 @@ get_header();
     function showFood() {
         console.log(order);
 
+        let idCounter = 1;
+
         order.forEach(order => {
 
             const klon = temp.cloneNode(true).content;
+            klon.querySelector("#order-amount-").id += idCounter;
             klon.querySelector("#day").textContent = order.title.rendered;
             klon.querySelector("#food").textContent = order.titel;
 
+            klon.querySelector(".plus").dataset.orderAmount = idCounter;
+            klon.querySelector(".minus").dataset.orderAmount = idCounter;
+
             foodSection.appendChild(klon);
 
+
+            idCounter++;
         })
 
+    }
+
+    function plus(id) {
+        document.querySelector("#order-amount-" + id).stepUp(1);
+    }
+
+    function minus(id) {
+        document.querySelector("#order-amount-" + id).stepDown(1);
     }
 
 </script>
