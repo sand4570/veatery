@@ -68,7 +68,7 @@ get_header();
 
     function clickbutton() {
         console.log("clickbutton");
-        document.querySelectorAll("#filter  button").forEach(elm => {
+        document.querySelectorAll("#filter button").forEach(elm => {
             elm.addEventListener("click", filtrering);
         })
     }
