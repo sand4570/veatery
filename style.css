@@ -37,6 +37,10 @@ Author:      Sandie Petersen
     margin-left: 10rem;
 }
 
+#h1-bestilling {
+    margin-left: 10rem;
+}
+
 .voresh2 {
     font-size: 2rem;
     font-family: 'Noto Sans JP', sans-serif;
@@ -75,7 +79,7 @@ p {
         margin-left: 10rem;
         margin-right: 10rem;
         display: flex;
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
     }
 
     #art-menu {
@@ -109,10 +113,17 @@ p {
 
 /** bestilling personlige oplysninger **/
 
+#info, #order, #delivery, #payment {
+    background-color: #D6CAB3;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
 #info-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
 }
 
 #p1 {
@@ -123,6 +134,8 @@ p {
 #f-name {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    background-color: #E2D5C7;
+    border-bottom: none;
 }
 
 #p2 {
@@ -133,6 +146,8 @@ p {
 #e-name {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    background-color: #E2D5C7;
+    border-bottom: none;
 }
 
 #p3 {
@@ -143,6 +158,8 @@ p {
 #mail {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    background-color: #E2D5C7;
+    border-bottom: none;
 }
 
 #p4 {
@@ -153,6 +170,8 @@ p {
 #phone {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+    background-color: #E2D5C7;
+    border-bottom: none;
 }
 
 /** bestilling personlige oplysninger slut **/
@@ -185,10 +204,20 @@ p {
 /** media query for bestilling web **/
 @media screen and (min-width:380px) {
 
+    #bestilling-style {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
     #info-container {
         display: grid;
         grid-template-columns: 1fr 4fr;
         grid-template-rows: repeat(4, 1fr);
+    }
+
+    #food-section {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     #art-order {
@@ -206,9 +235,21 @@ p {
         grid-row: 1 / 2;
     }
 
-    #number {
+    #counter input {
+        max-width: 50px;
         grid-column: 3 / 4;
         grid-row: 1 / 2;
+        text-align: center;
+    }
+
+    .minus {
+        width: 43px;
+        height: 43px;
+    }
+
+    .plus {
+        width: 43px;
+        height: 43px;
     }
 
 }
@@ -280,3 +321,17 @@ p {
 }
 
 /* GALLERI SLUT */
+
+/* FJERN KNAPPER FRA INPUT FELTER */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

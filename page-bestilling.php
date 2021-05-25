@@ -17,12 +17,13 @@ get_header();
 ?>
 
 <div class="page-style">
-<h1 class="voresh1">Bestilling</h1>
+<h1 id="h1-bestilling" class="voresh1">Bestilling</h1>
 
+<div id="bestilling-style">
 <section id="info">
     <h2>Personlig information</h2>
     <div id="info-container">
-        <p id="p1">Fornavn</p>
+        <label for="f-name" id="p1">Fornavn</label>
         <input id="f-name" type="text">
         <p id="p2">Efternavn</p>
         <input id="e-name" type="text">
@@ -57,6 +58,7 @@ get_header();
 
 </section>
 </div>
+</div>
 
 <template>
     <article id="art-order" class="article">
@@ -64,7 +66,7 @@ get_header();
         <p id="food"></p>
         <div id="counter">
             <button class="minus" data-order-amount="" onclick="minus(this.dataset.orderAmount)">-</button>
-            <input type="number" id="order-amount-" class="number" min=0>
+            <input type="number" id="order-amount-" class="amount" value="0" min=0>
             <button class="plus" data-order-amount="" onclick="plus(this.dataset.orderAmount)">+</button>
         </div>
     </article>
