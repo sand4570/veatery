@@ -17,8 +17,8 @@ get_header();
 ?>
 
 <div class="page-style">
-    <h1 class="voresh1">Uge 24</h1>
-    <p>Hos Veatery arbejder vi med ugebaserede menuer, da alle vores retter er sæsonbaseret. <br>
+    <h1 id="h1-menu" class="voresh1">Uge 24</h1>
+    <p id="menu-beskrivelse">Hos Veatery arbejder vi med ugebaserede menuer, da alle vores retter er sæsonbaseret. <br>
         Du kan enten bestille til én dag, eller til hele ugen. <br> Bestilling skal foregå inden kl. 22.00 på dagen før, da vi kun laver et bestemt antal kuverter om dagen for at undgå madspil. </p>
 
     <section id="menu-main"></section>

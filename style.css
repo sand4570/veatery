@@ -29,7 +29,12 @@ Author:      Sandie Petersen
     font-size: 4.2rem;
     font-family: "courier new";
     font-weight: normal;
-    text-align: center;
+    margin-left: 1rem;
+
+}
+
+#h1-menu {
+    margin-left: 10rem;
 }
 
 .voresh2 {
@@ -84,6 +89,11 @@ h3 {
     #txt {
         grid-column: 2 / 3;
         margin-left: 1rem;
+    }
+
+    #menu-beskrivelse {
+        margin-left: 10rem;
+        margin-bottom: 2.5rem;
     }
 }
 
@@ -225,6 +235,10 @@ h3 {
     animation-duration: 0.3s;
     animation-fill-mode: both;
     animation-iteration-count: 1;
+}
+
+#opskrift-beskrivelse {
+    margin-left: 1rem;
 }
 
 @keyframes opskrift_kf {
