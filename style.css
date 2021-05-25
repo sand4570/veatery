@@ -6,11 +6,12 @@ Description:  onepress Child Theme
 Author:      Sandie Petersen
 */
 
-/* GENNEREL */
+/*
+#E2D5C7 - lys
+#D6CAB3 - mørk
+*/
 
-body {
-    background-color: #E2D5C7;
-}
+/* GENNEREL */
 
 .page-style {
     padding-left: 4rem;
@@ -41,6 +42,7 @@ body {
 h3 {
     font-size: 2rem;
 }
+
 /* GENNEREL SLUT */
 
 /* MENU */
@@ -61,17 +63,22 @@ h3 {
     #menu-main {
         margin-left: 10rem;
         margin-right: 10rem;
+        display: flex;
+        flex-direction: column-reverse
     }
 
     #art-menu {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background-color: #D6CAB3;
     }
 
-    .image {
+    .menu-image {
         grid-column: 1 / 2;
         height: 280px;
+        width: 280px;
     }
 
     #txt {
@@ -224,6 +231,7 @@ h3 {
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(1.03);
     }

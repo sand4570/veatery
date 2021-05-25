@@ -26,7 +26,7 @@ get_header();
 
 <template>
     <article id="art-menu" class="article">
-        <img src="" alt="" class="image">
+        <img src="" alt="" class="menu-image">
         <div id="txt">
             <h2 class="title"></h2>
             <h3 class="subtite"></h3>
