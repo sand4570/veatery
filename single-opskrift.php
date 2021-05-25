@@ -18,29 +18,29 @@ do_action( 'onepress_page_before_content' );
 ?>
 
 <div class="page-style">
-<section id="primary" class="content-area">
-    <main id="main" class="site-main">
-        <button class="singletilbage">Tilbage</button>
+    <section id="primary" class="content-area">
+        <main id="main" class="site-main">
+            <button class="singletilbage buttons">Tilbage</button>
 
-        <article id="opskriftgrid">
+            <article id="opskriftgrid">
 
-            <div id="col-left">
-                <img src="" alt="" class="billede">
-                <div>
-                    <img src="" alt="" class="ikon1">
-                    <img src="" alt="" class="ikon2">
-                    <img src="" alt="" class="ikon3">
+                <div id="col-left">
+                    <img src="" alt="" class="billede">
+                    <div>
+                        <img src="" alt="" class="ikon1">
+                        <img src="" alt="" class="ikon2">
+                        <img src="" alt="" class="ikon3">
+                    </div>
                 </div>
-            </div>
 
-            <div id="col-right">
-                <h2 class="title"></h2>
-                <p class="ingredients"></p>
-                <p class="description"></p>
-            </div>
-        </article>
-    </main>
-</section>
+                <div id="col-right">
+                    <h2 class="title"></h2>
+                    <p class="ingredients"></p>
+                    <p class="description"></p>
+                </div>
+            </article>
+        </main>
+    </section>
 </div>
 
 <script>
