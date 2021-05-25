@@ -260,6 +260,11 @@ p {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.stripe {
+    background-color: #EADBBE;
 }
 
 #day {
@@ -277,7 +282,53 @@ p {
     grid-row: 2 / 3;
 }
 
+#counter {
+        justify-self: end;
+    }
+
+#counter input {
+    max-width: 50px;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #58685e;
+    border: none;
+    background-color: #E2D5C7;
+    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    text-shadow: none;
+}
+
+.minus,
+.plus {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #58685e;
+    border-color: #58685e;
+    background-color: #d6cab3;
+    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    text-shadow: none;
+    width: 43px;
+    height: 43px;
+}
+
+.minus:hover,
+.plus:hover {
+    color: #d6cab3;
+    border-color: #d6cab3;
+    background-color: #58685e;
+}
+
 /** bestilling maden slut **/
+
+/** bestilling levering **/
+
+#delivery input {
+    color: #E2D5C7;
+    border-color: #58685e;
+}
+
+/** bestilling levering slut **/
 
 /** media query for bestilling web **/
 @media screen and (min-width:380px) {
@@ -308,7 +359,7 @@ p {
     }
 
     #art-order {
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
 
@@ -322,21 +373,16 @@ p {
         grid-row: 1 / 2;
     }
 
-    #counter input {
-        max-width: 50px;
+    #pris {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
-        text-align: center;
     }
 
-    .minus {
-        width: 43px;
-        height: 43px;
-    }
 
-    .plus {
-        width: 43px;
-        height: 43px;
+
+    #counter input {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
     }
 
 }

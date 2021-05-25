@@ -73,6 +73,7 @@ get_header();
     <article id="art-order" class="article">
         <p id="day"></p>
         <p id="food"></p>
+        <p id="pris"></p>
         <div id="counter">
             <button class="minus" data-order-amount="" onclick="minus(this.dataset.orderAmount)">-</button>
             <input type="number" id="order-amount-" class="amount" value="0" min=0>
@@ -107,6 +108,7 @@ get_header();
         console.log(order);
 
         let idCounter = 1;
+        let stripeCounter = 1;
 
         order.forEach(order => {
 
@@ -114,13 +116,18 @@ get_header();
             klon.querySelector("#order-amount-").id += idCounter;
             klon.querySelector("#day").textContent = order.title.rendered;
             klon.querySelector("#food").textContent = order.titel;
+            klon.querySelector("#pris").innerHTML = order.pris + ' kr';
 
             klon.querySelector(".plus").dataset.orderAmount = idCounter;
             klon.querySelector(".minus").dataset.orderAmount = idCounter;
 
+            if (stripeCounter % 2 == 0) {
+                klon.querySelector("#art-order").classList.add("stripe");
+            }
+
             foodSection.appendChild(klon);
 
-
+            stripeCounter++;
             idCounter++;
         })
 
