@@ -17,6 +17,7 @@ $layout = onepress_get_layout();
 do_action( 'onepress_page_before_content' );
 ?>
 
+<div class="page-style">
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
         <button class="singletilbage">Tilbage</button>
@@ -40,7 +41,7 @@ do_action( 'onepress_page_before_content' );
         </article>
     </main>
 </section>
-
+</div>
 
 <script>
     let opskrift;

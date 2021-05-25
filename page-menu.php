@@ -15,10 +15,13 @@
 get_header();
 
 ?>
-<h1>Uge 24</h1>
+
+<div class="page-style">
+<h1 class="voresh1">Uge 24</h1>
 <p>Her skal der skrives en beskrivelse</p>
 
 <section id="menu-main"></section>
+</div>
 
 <template>
     <article id="art-menu" class="article">

@@ -15,14 +15,18 @@
 get_header();
 
 ?>
-<h1>Gallei</h1>
-<p>Her skal der skrives en beskrivelse</p>
 
-<section id="galleri-main"></section>
+<div id="page-galleri" class="page-style">
+    <h1 class="voresh1">Galleri</h1>
+    <p>Her skal der skrives en beskrivelse</p>
+
+    <section id="galleri-main"></section>
+
+</div>
 
 <template>
     <article class="article">
-        <img src="" alt="" class="image">
+        <img id="glimg" src="" alt="" class="image">
     </article>
 </template>
 
@@ -50,12 +54,12 @@ get_header();
     function showGalleri() {
         console.log(galleri);
 
-        galleri.forEach(galleri=> {
+        galleri.forEach(galleri => {
 
-                const klon = temp.cloneNode(true).content;
-                klon.querySelector("img").src = galleri.billede.guid;
+            const klon = temp.cloneNode(true).content;
+            klon.querySelector("img").src = galleri.billede.guid;
 
-                galleriMain.appendChild(klon);
+            galleriMain.appendChild(klon);
 
 
         })

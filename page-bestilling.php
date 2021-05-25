@@ -15,7 +15,9 @@
 get_header();
 
 ?>
-<h1>Bestilling</h1>
+
+<div class="page-style">
+<h1 class="voresh1">Bestilling</h1>
 
 <section id="info">
     <h2>Personlig information</h2>
@@ -54,6 +56,7 @@ get_header();
     <label for="pay2">Mobilepay</label>
 
 </section>
+</div>
 
 <template>
     <article id="art-order" class="article">

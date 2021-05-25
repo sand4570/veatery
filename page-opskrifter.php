@@ -15,18 +15,22 @@
 get_header();
 
 ?>
-<h1>Opskrifter</h1>
+
+<div class="page-style">
+
+<h1 class="voresh1">Opskrifter</h1>
 
 <nav id="filter">
-    <button data-podcast="alle" class="valgt alleknap">Alle</button>
+    <button data-opskrift="alle" class="valgt alleknap">Alle</button>
 </nav>
 
 <section id="recipe-main"></section>
+</div>
 
 <template>
-    <article class="article">
-        <img src="" alt="" class="image">
-        <h2 class="title"></h2>
+    <article class="article opskrift-article">
+        <img id="opimg" src="" alt="" class="image">
+        <h2 class="title voresh2"></h2>
     </article>
 </template>
 
@@ -57,9 +61,12 @@ get_header();
     }
 
     function showButtons() {
-        categories.forEach(cat => {
-            document.querySelector("#filter").innerHTML += `<button class="filter" data-podcast="${cat.id}">${cat.name}</button>`
 
+
+        categories.forEach(cat => {
+            //if (cat.id == 12 || cat.id == 9 || cat.id == 10 ||cat.id == 11 ) {
+            document.querySelector("#filter").innerHTML += `<button class="filter" data-opskrift="${cat.id}">${cat.name}</button>`
+            //}
         })
 
         clickbutton();
