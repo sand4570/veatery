@@ -17,10 +17,11 @@ get_header();
 ?>
 
 <div class="page-style">
-<h1 class="voresh1">Uge 24</h1>
-<p>Her skal der skrives en beskrivelse</p>
+    <h1 class="voresh1">Uge 24</h1>
+    <p>Hos Veatery arbejder vi med ugebaserede menuer, da alle vores retter er sæsonbaseret. <br>
+        Du kan enten bestille til én dag, eller til hele ugen. <br> Bestilling skal foregå inden kl. 22.00 på dagen før, da vi kun laver et bestemt antal kuverter om dagen for at undgå madspil. </p>
 
-<section id="menu-main"></section>
+    <section id="menu-main"></section>
 </div>
 
 <template>
@@ -30,6 +31,9 @@ get_header();
             <h2 class="title"></h2>
             <h3 class="subtite"></h3>
             <p class="beskrivelse"></p>
+            <a href="https://neanderpetersen.dk/kea/10_eksamen/veatery/bestilling/">
+                <button>BESTIL NU</button>
+            </a>
         </div>
     </article>
 </template>
