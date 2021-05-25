@@ -58,19 +58,25 @@ h3 {
 
 /** media query for menu web **/
 @media screen and (min-width:380px) {
-    #menu-main {}
+    #menu-main {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
 
     #art-menu {
         display: grid;
         grid-template-columns: 1fr 2fr;
+        margin-bottom: 3rem;
     }
 
     .image {
         grid-column: 1 / 2;
+        height: 280px;
     }
 
     #txt {
         grid-column: 2 / 3;
+        margin-left: 1rem;
     }
 }
 
