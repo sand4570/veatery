@@ -29,7 +29,7 @@ get_header();
     <p id="opskrift-beskrivelse">Her kan du få inspiration til hvordan du selv kan lave dine egne plantebaserede retter. <br> Retterne er udarbejdet af Team Veatery, og de er alle enten vegetariske eller veganske. <br> </p>
 
     <nav id="filter">
-        <button data-opskrift="alle" class="valgt alleknap">Alle</button>
+        <button data-opskrift="alle" class="valgt alleknap buttons">Alle</button>
     </nav>
 
     <section id="recipe-main"></section>

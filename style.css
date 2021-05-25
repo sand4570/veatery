@@ -26,7 +26,7 @@ Author:      Sandie Petersen
 }
 
 .voresh1 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
     margin-left: 1.5rem;
@@ -37,28 +37,103 @@ Author:      Sandie Petersen
     margin-left: 10rem;
 }
 
+#h2-menu {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    color: black;
+}
+
 #h1-bestilling {
     margin-left: 10rem;
 }
 
 .voresh2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
     margin-top: 1rem;
 }
 
-h3 {
-    font-size: 2rem;
+.voresh3 {
+    font-size: 1.3rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    color: black;
 }
 
 p {
     font-family: 'EB Garamond', serif;
-    font-size: 1.1rem;
+    font-size: 1.099rem;
     color: black;
 }
 
 /* GENNEREL SLUT */
+
+/*KNAPPER*/
+
+.buttons {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #58685e;
+    border-color: #58685e;
+    background-color: #d6cab3;
+    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    text-shadow: none;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.buttons:active {
+    color: #d6cab3;
+    border-color: #d6cab3;
+    background-color: #58685e;
+}
+
+.buttons:hover {
+    color: #d6cab3;
+    border-color: #d6cab3;
+    background-color: #58685e;
+}
+
+.buttons:visited {
+    color: #d6cab3;
+    border-color: #d6cab3;
+    background-color: #58685e;
+}
+
+.menubutton {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #58685e;
+    border-color: #58685e;
+    background-color: #d6cab3;
+    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+.menubutton:active {
+    color: #d6cab3;
+    border-color: #d6cab3;
+    background-color: #58685e;
+}
+
+.menubutton:hover {
+    color: #d6cab3;
+    border-color: #d6cab3;
+    background-color: #58685e;
+}
+
+.menubutton:visited {
+    color: #d6cab3;
+    border-color: #d6cab3;
+    background-color: #58685e;
+}
+
+
+/*KNAPPER SLUT*/
 
 /* MENU */
 
@@ -113,7 +188,10 @@ p {
 
 /** bestilling personlige oplysninger **/
 
-#info, #order, #delivery, #payment {
+#info,
+#order,
+#delivery,
+#payment {
     background-color: #D6CAB3;
     padding: 1rem;
     margin-bottom: 2rem;
@@ -207,6 +285,14 @@ p {
     #bestilling-style {
         margin-left: 10rem;
         margin-right: 10rem;
+        font-family: 'EB Garamond', serif;
+        font-size: 1.099rem;
+        color: black;
+    }
+
+    #bestilling-style h2 {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: normal;
     }
 
     #info-container {
@@ -214,6 +300,7 @@ p {
         grid-template-columns: 1fr 4fr;
         grid-template-rows: repeat(4, 1fr);
     }
+
 
     #food-section {
         display: flex;
@@ -327,11 +414,11 @@ p {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }

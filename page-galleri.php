@@ -18,7 +18,7 @@ get_header();
 
 <div id="page-galleri" class="page-style">
     <h1 class="voresh1">Galleri</h1>
-    <p>Her skal der skrives en beskrivelse</p>
+    <p>I vores galleri kan du nyde ... <br>Hop forbi vores Instagram og se mere!</p>
 
     <section id="galleri-main"></section>
 

@@ -16,6 +16,14 @@ get_header();
 
 ?>
 
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+
 <div class="page-style">
     <h1 id="h1-menu" class="voresh1">Uge 24</h1>
     <p id="menu-beskrivelse">Hos Veatery arbejder vi med ugebaserede menuer, da alle vores retter er sæsonbaseret. <br>
@@ -28,11 +36,11 @@ get_header();
     <article id="art-menu" class="article">
         <img src="" alt="" class="menu-image">
         <div id="txt">
-            <h2 class="title"></h2>
-            <h3 class="subtite"></h3>
+            <h2 id="h2-menu" class="title"></h2>
+            <h3 class="subtite voresh3"></h3>
             <p class="beskrivelse"></p>
             <a href="https://neanderpetersen.dk/kea/10_eksamen/veatery/bestilling/">
-                <button>BESTIL NU</button>
+                <button class="menubutton">BESTIL NU</button>
             </a>
         </div>
     </article>
