@@ -16,6 +16,13 @@ get_header();
 
 ?>
 
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
 <div class="page-style">
 
     <h1 class="voresh1">Opskrifter</h1>
@@ -30,8 +37,10 @@ get_header();
 
 <template>
     <article class="article opskrift-article">
-        <img id="opimg" src="" alt="" class="image">
-        <h2 class="title voresh2"></h2>
+        <div class="opskrift-div">
+            <img id="opimg" src="" alt="" class="image">
+            <h2 class="title voresh2"></h2>
+        </div>
     </article>
 </template>
 

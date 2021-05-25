@@ -26,10 +26,10 @@ Author:      Sandie Petersen
 }
 
 .voresh1 {
-    font-size: 4.2rem;
-    font-family: "courier new";
+    font-size: 3.8rem;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 
 }
 
@@ -39,13 +39,19 @@ Author:      Sandie Petersen
 
 .voresh2 {
     font-size: 2rem;
-    font-family: "courier new";
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
     margin-top: 1rem;
 }
 
 h3 {
     font-size: 2rem;
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.1rem;
+    color: black;
 }
 
 /* GENNEREL SLUT */
@@ -219,11 +225,17 @@ h3 {
 }
 
 #opimg {
-    height: 25rem;
+    height: 350px;
+    width: 350px;
 }
 
 .opskrift-article {
-    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.opskrift-article {
+    padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 0.5;
@@ -238,7 +250,7 @@ h3 {
 }
 
 #opskrift-beskrivelse {
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 @keyframes opskrift_kf {
