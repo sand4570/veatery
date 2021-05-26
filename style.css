@@ -38,9 +38,6 @@ li {
     background-color: #f7ece0;
 }
 
-#page-galleri {
-    margin-bottom: 4rem;
-}
 
 .voresh1 {
     font-size: 3.5rem;
@@ -295,7 +292,7 @@ p {
 }
 
 .kontaktos:hover {
-    color: white;
+    color: #909d82;
 }
 
 .bestilknap {
@@ -531,8 +528,8 @@ p {
 .singletitle {
 
     text-align: center;
-    margin-bottom: 2rem;
-    margin-top: -4rem;
+    margin-bottom: 3rem;
+    margin-top: -4.5rem;
 
 }
 
