@@ -22,8 +22,10 @@ do_action( 'onepress_page_before_content' );
         <main id="main" class="site-main">
 
             <button class="singletilbage buttons">Tilbage</button>
+            <h2 class="title singletitle"></h2>
 
             <article id="opskriftgrid">
+
 
                 <div id="col-left">
                     <img src="" alt="" class="billede">
@@ -36,10 +38,10 @@ do_action( 'onepress_page_before_content' );
                 </div>
 
                 <div id="col-right">
-                    <h2 class="title"></h2>
-                    <h3>Ingredienser</h3>
-                        <p class="ingredients"></p>
-                    <h3>Fremgangsmåde</h3>
+                    <h3 class="voresh3">Ingredienser</h3>
+                    <ul class="ingredients">
+                    </ul>
+                    <h3 class="voresh3">Fremgangsmåde</h3>
                     <p class="description"></p>
                 </div>
             </article>
@@ -79,7 +81,7 @@ do_action( 'onepress_page_before_content' );
         console.log("visOpskrifter");
         document.querySelector(".title").textContent = opskrift.title.rendered;
         document.querySelector(".description").textContent = opskrift.fremgang;
-        document.querySelector(".ingredients").textContent = opskrift.ingredienser;
+        document.querySelector(".ingredients").innerHTML = opskrift.ingredienser;
         document.querySelector(".billede").src = opskrift.billede.guid;
         //        document.querySelector(".ikon1").src = opskrift.billede.guid;
         //        document.querySelector(".ikon2").src = opskrift.billede.guid;

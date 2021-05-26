@@ -27,10 +27,10 @@ get_header();
 
 <div class="page-style">
     <h1 id="h1-bestilling" class="voresh1">Bestilling</h1>
-    <p>Bestilling skal foregå inden kl. 22.00 dagen før, da vi kun laver et bestemt antal kuverter om dagen for at undgå madspil. <br>
-        Maden skal afhentes på dagen på Slagtehusgade 11 mellem kl. 17.00-18.30. <br>Vi bor i køkkenfællesskabet Kitchen Collective der er et start-upfælleskab med andre madiværksættere. <br> <br>
+    <p id="bestil-beskriv">Bestilling skal foregå inden kl. 22.00 dagen før, da vi kun laver et bestemt antal kuverter om dagen for at undgå madspil. <br>
+        Maden skal afhentes på dagen på vores adresse i Kødbyen mellem kl. 17.00-18.30. <br>Vi bor i køkkenfællesskabet Kitchen Collective der er et start-upfælleskab med andre madiværksættere. <br> <br>
 
-        Vil du bestille catering til et event eller en begivenhed? Så kontakt os gerne. </p>
+        Vil du bestille catering til et event eller en begivenhed? Så <a href="https://neanderpetersen.dk/kea/10_eksamen/veatery/kontakt/" class="kontaktos">kontakt os</a> gerne. </p>
 
     <div id="bestilling-style">
         <section id="info">
@@ -63,13 +63,17 @@ get_header();
         </section>
 
         <section id="payment">
-            <h2>Betalling</h2>
+            <h2>Betaling</h2>
             <input type="radio" id="pay1" name="payment" value="0">
             <label for="pay1">Kontant ved afhentning</label><br>
             <input type="radio" id="pay2" name="payment" value="1">
             <label for="pay2">Mobilepay</label>
 
         </section>
+
+        <a href="https://neanderpetersen.dk/kea/10_eksamen/veatery/tak/">
+            <button class="bestilknap">BESTIL</button>
+        </a>
     </div>
 </div>
 
