@@ -27,6 +27,10 @@ get_header();
 
 <div class="page-style">
     <h1 id="h1-bestilling" class="voresh1">Bestilling</h1>
+    <p>Bestilling skal foregå inden kl. 22.00 dagen før, da vi kun laver et bestemt antal kuverter om dagen for at undgå madspil. <br>
+        Maden skal afhentes på dagen på Slagtehusgade 11 mellem kl. 17.00-18.30. <br>Vi bor i køkkenfællesskabet Kitchen Collective der er et start-upfælleskab med andre madiværksættere. <br> <br>
+
+        Vil du bestille catering til et event eller en begivenhed? Så kontakt os gerne. </p>
 
     <div id="bestilling-style">
         <section id="info">
