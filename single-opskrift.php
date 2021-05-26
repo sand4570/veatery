@@ -20,6 +20,7 @@ do_action( 'onepress_page_before_content' );
 <div class="page-style">
     <section id="primary" class="content-area">
         <main id="main" class="site-main">
+
             <button class="singletilbage buttons">Tilbage</button>
 
             <article id="opskriftgrid">
@@ -27,6 +28,7 @@ do_action( 'onepress_page_before_content' );
                 <div id="col-left">
                     <img src="" alt="" class="billede">
                     <div>
+
                         <img src="" alt="" class="ikon1">
                         <img src="" alt="" class="ikon2">
                         <img src="" alt="" class="ikon3">
@@ -35,7 +37,9 @@ do_action( 'onepress_page_before_content' );
 
                 <div id="col-right">
                     <h2 class="title"></h2>
-                    <p class="ingredients"></p>
+                    <h3>Ingredienser</h3>
+                        <p class="ingredients"></p>
+                    <h3>Fremgangsmåde</h3>
                     <p class="description"></p>
                 </div>
             </article>

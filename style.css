@@ -71,7 +71,7 @@ p {
 
 /*KNAPPER*/
 
-.buttons {
+.buttons, .filter {
     font-family: 'Noto Sans JP', sans-serif;
     color: #58685e;
     border-color: #58685e;
@@ -85,13 +85,13 @@ p {
     margin-top: 2rem;
 }
 
-.buttons:active {
+.buttons:active, .filter:active {
     color: #d6cab3;
     border-color: #d6cab3;
     background-color: #58685e;
 }
 
-.buttons:hover {
+.buttons:hover, .filter:hover {
     color: #d6cab3;
     border-color: #d6cab3;
     background-color: #58685e;
@@ -283,8 +283,8 @@ p {
 }
 
 #counter {
-        justify-self: end;
-    }
+    justify-self: end;
+}
 
 #counter input {
     max-width: 50px;
@@ -438,6 +438,45 @@ p {
 }
 
 /* OPSKRIFTER SLUT */
+
+/* SINGLE VIEW */
+
+.page-header {
+    display: none;
+}
+
+.page-style #primary {
+    background-color: #E2D5C7;
+    width: 90vw;
+    float: none;
+    padding-top: 0px;
+}
+
+#opskriftgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#col-left img {
+    grid-column: 1 / 2;
+    width: 100%;
+}
+
+#col-left div {
+    grid-column: 1 / 2;
+    background-color: aliceblue;
+    justify-self: center;
+    align-self: center;
+    margin: 1rem;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+
+#col-right {
+    grid-column: 2 / 3;
+    padding-left: 2rem;
+}
+/* SINGLE VIEW SLUT */
 
 /* GALLERI */
 
