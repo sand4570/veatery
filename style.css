@@ -13,22 +13,14 @@ Author:      Sandie Petersen
 
 /* GENNEREL */
 
-li {
-    color: #333333;
-    font-family: 'EB Garamond', serif;
-    font-size: 1.15rem;
-}
+
 
 .ingredients {
     margin-bottom: 2rem;
     line-height: 1.3rem;
 }
 
-.valgt {
-    color: #E2D5C7 !important;
-    border-color: #E2D5C7 !important;
-    background-color: #58685e !important;
-}
+
 
 .page-style,
 .site-content {
@@ -119,12 +111,7 @@ p {
     color: #333333;
 }
 
-#kontakttekst, #kontakttekst1 {
-    font-family: 'EB Garamond', serif;
-    font-size: 1.15rem;
-    color: #333333;
-    font-weight: 700;
-}
+
 
 
 .omimg {
@@ -135,6 +122,12 @@ p {
 /* GENNEREL SLUT */
 
 /*KNAPPER*/
+
+.valgt {
+    color: #E2D5C7 !important;
+    border-color: #E2D5C7 !important;
+    background-color: #58685e !important;
+}
 
 .buttons,
 .filter {
@@ -213,6 +206,23 @@ p {
 /*KNAPPER SLUT*/
 
 /* FORSIDE */
+
+#art-forside p {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#forside-button {
+    position: absolute;
+    left: 34.5vw;
+    top: 53vh;
+}
+
+#logo-splash {
+    position: absolute;
+    max-width: 15rem;
+    left: 33vw;
+    top: 16vh;
+}
 
 #page-wrapper {
     margin-top: 35rem;
@@ -384,10 +394,22 @@ p {
     background-color: #E2D5C7;
     font-weight: bold;
     padding: 10px 60px 10px 60px;
-    cursor: pointer;
-    text-shadow: none;
     margin-left: 40%;
+    cursor: pointer;
+}
 
+
+.bestilknap:hover {
+    color: #E2D5C7;
+    border-color: #E2D5C7;
+    background-color: #58685e;
+
+}
+
+.bestilknap:visited {
+    color: #E2D5C7;
+    border-color: #E2D5C7;
+    background-color: #58685e;
 }
 
 .bestilknap:active {
@@ -396,17 +418,6 @@ p {
     background-color: #58685e;
 }
 
-.bestilknap:hover {
-    color: #E2D5C7;
-    border-color: #E2D5C7;
-    background-color: #58685e;
-}
-
-.bestilknap:visited {
-    color: #E2D5C7;
-    border-color: #E2D5C7;
-    background-color: #58685e;
-}
 
 .bestilknap:focus {
     outline: none;
@@ -615,6 +626,12 @@ p {
 
 }
 
+li {
+    color: #333333;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.15rem;
+}
+
 .page-header {
     display: none;
 }
@@ -685,6 +702,18 @@ p {
 }
 
 /* GALLERI SLUT */
+
+/*KONTAKTSIDE*/
+
+#kontakttekst,
+#kontakttekst1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.15rem;
+    color: #333333;
+    font-weight: 700;
+}
+
+/*KONTAKTSIDE SLUT*/
 
 /* FJERN KNAPPER FRA INPUT FELTER */
 
