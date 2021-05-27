@@ -654,14 +654,17 @@ li {
     margin-left: 2rem;
 }
 
-#col-left div {
+#col-right div {
     grid-column: 1 / 2;
-    background-color: aliceblue;
-    justify-self: center;
-    align-self: center;
     margin: 1rem;
     padding: 1rem;
     padding-bottom: 0rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.ikon1, .ikon2, .ikon3 {
+    width: 10rem;
 }
 
 #col-right {

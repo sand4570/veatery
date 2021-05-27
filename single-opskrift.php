@@ -29,22 +29,21 @@ do_action( 'onepress_page_before_content' );
 
                 <div id="col-left">
                     <img src="" alt="" class="billede">
-                    <div>
 
+                </div>
+
+                <div id="col-right">
+                    <h3 class="voresh3">Ingredienser</h3>
+                    <ul class="ingredients"></ul>
+                    <div>
                         <img src="" alt="" class="ikon1">
                         <img src="" alt="" class="ikon2">
                         <img src="" alt="" class="ikon3">
                     </div>
                 </div>
-
-                <div id="col-right">
-                    <h3 class="voresh3">Ingredienser</h3>
-                    <ul class="ingredients">
-                    </ul>
-                    <h3 class="voresh3">Fremgangsmåde</h3>
-                    <p class="description"></p>
-                </div>
             </article>
+            <h3 class="voresh3">Fremgangsmåde</h3>
+            <p class="description"></p>
         </main>
     </section>
 </div>
@@ -83,9 +82,9 @@ do_action( 'onepress_page_before_content' );
         document.querySelector(".description").textContent = opskrift.fremgang;
         document.querySelector(".ingredients").innerHTML = opskrift.ingredienser;
         document.querySelector(".billede").src = opskrift.billede.guid;
-        //        document.querySelector(".ikon1").src = opskrift.billede.guid;
-        //        document.querySelector(".ikon2").src = opskrift.billede.guid;
-        //        document.querySelector(".ikon3").src = opskrift.billede.guid;
+        document.querySelector(".ikon1").src = opskrift.ikon1.guid;
+        document.querySelector(".ikon2").src = opskrift.ikon2.guid;
+        document.querySelector(".ikon3").src = opskrift.ikon3.guid;
 
     }
 
