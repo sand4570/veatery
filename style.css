@@ -119,7 +119,7 @@ p {
     color: #333333;
 }
 
-#kontakttekst {
+#kontakttekst, #kontakttekst1 {
     font-family: 'EB Garamond', serif;
     font-size: 1.15rem;
     color: #333333;
@@ -214,11 +214,19 @@ p {
 
 /* FORSIDE */
 
-#splash {
-    width: 100rem;
-    height: 100rem;
-    background-color: aqua;
-    /*background-image: url(https://neanderpetersen.dk/kea/10_eksamen/veatery/wp-content/uploads/2021/05/20-scaled.jpg);*/
+#page-wrapper {
+    margin-top: 35rem;
+}
+
+#splash #splash-img {
+    max-width: 100vw;
+    width: 100vw;
+    height: 84vh;
+    position: absolute;
+    left: -10.4vw;
+    top: -5vh;
+    object-fit: cover;
+
 }
 
 #opskrift-section {
