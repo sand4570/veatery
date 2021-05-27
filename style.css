@@ -119,6 +119,14 @@ p {
     color: #333333;
 }
 
+#kontakttekst {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.15rem;
+    color: #333333;
+    font-weight: 700;
+}
+
+
 .omimg {
     width: 35vw;
 }
