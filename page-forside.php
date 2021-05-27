@@ -100,6 +100,9 @@ do_action( 'onepress_page_before_content' );
                 const klon = temp.cloneNode(true).content;
                 klon.querySelector("img").src = recipe.billede.guid;
                 klon.querySelector("p").textContent = recipe.title.rendered;
+                klon.querySelector("article").addEventListener("click", () => {
+                    location.href = recipe.link;
+                })
 
                 opskriftSection.appendChild(klon);
                 recipeCount++;
