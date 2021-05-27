@@ -50,7 +50,10 @@ get_header();
         <section id="order">
             <h2>Maden</h2>
             <div id="food-section"></div>
-            <p>Samlet pris</p>
+            <div id="peice-wrapper">
+                <p>Samlet pris</p>
+                <p id="samlet-pris">0 kr</p>
+            </div>
         </section>
 
         <section id="delivery">
@@ -94,6 +97,7 @@ get_header();
     let order;
     let count = 0
 
+    const priceContainer = document.querySelector("#samlet-pris")
     const temp = document.querySelector("template");
     const foodSection = document.querySelector("#food-section");
 
@@ -121,13 +125,13 @@ get_header();
         order.forEach(order => {
 
             const klon = temp.cloneNode(true).content;
-            klon.querySelector("#order-amount-").id += idCounter;
+            klon.querySelector("#order-amount-").id += order.id;
             klon.querySelector("#day").textContent = order.title.rendered;
             klon.querySelector("#food").textContent = order.titel;
             klon.querySelector("#pris").innerHTML = order.pris + ' kr';
 
-            klon.querySelector(".plus").dataset.orderAmount = idCounter;
-            klon.querySelector(".minus").dataset.orderAmount = idCounter;
+            klon.querySelector(".plus").dataset.orderAmount = order.id;
+            klon.querySelector(".minus").dataset.orderAmount = order.id;
 
             if (stripeCounter % 2 == 0) {
                 klon.querySelector("#art-order").classList.add("stripe");
@@ -143,10 +147,21 @@ get_header();
 
     function plus(id) {
         document.querySelector("#order-amount-" + id).stepUp(1);
+        total();
     }
 
     function minus(id) {
         document.querySelector("#order-amount-" + id).stepDown(1);
+        total();
+    }
+
+    function total() {
+        let sum = 0;
+        order.forEach(order => {
+            sum += Number(order.pris) * Number(document.querySelector("#order-amount-" + order.id).value);
+        });
+
+        priceContainer.innerHTML = sum + ' kr';
     }
 
 </script>
