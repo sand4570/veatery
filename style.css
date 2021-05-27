@@ -204,6 +204,31 @@ p {
 
 /*KNAPPER SLUT*/
 
+/* FORSIDE */
+
+#splash {
+    width: 100rem;
+    height: 100rem;
+    background-color: aqua;
+    /*background-image: url(https://neanderpetersen.dk/kea/10_eksamen/veatery/wp-content/uploads/2021/05/20-scaled.jpg);*/
+}
+
+#opskrift-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #E2D5C7;
+    margin-bottom: 2rem;
+}
+
+#art-forside img {
+    height: 20rem;
+    margin-top: 1.5rem;
+}
+
+/* FORSIDE SLUT */
+
+
 /* MENU */
 
 #art-menu {
