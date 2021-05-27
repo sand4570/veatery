@@ -30,7 +30,8 @@ li {
     background-color: #58685e !important;
 }
 
-.page-style {
+.page-style,
+.site-content {
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 2rem;
@@ -45,6 +46,15 @@ li {
     font-weight: normal;
     margin-left: 1.5rem;
 
+}
+
+.forsideh1 {
+    font-size: 3.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    margin-left: 1.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 #h1-menu {
@@ -68,6 +78,13 @@ li {
     margin-top: 1rem;
 }
 
+.forsideh2 {
+    font-size: 2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
 .voresh3 {
     font-size: 1.3rem;
     font-family: 'Noto Sans JP', sans-serif;
@@ -75,12 +92,36 @@ li {
     color: #333333;
 }
 
+.forsideh3 {
+    font-size: 1.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    color: #333333;
+}
+
+.forsideimg {
+    width: 100%;
+}
+
+.forsidevision {
+    background-color: #E2D5C7;
+}
+
+.forsidevision img,
+.forsidekolonne {
+    padding: 2rem;
+}
+
+
 p {
     font-family: 'EB Garamond', serif;
     font-size: 1.15rem;
     color: #333333;
 }
 
+.omimg {
+    width: 35vw;
+}
 
 
 /* GENNEREL SLUT */
