@@ -35,6 +35,8 @@ do_action( 'onepress_page_before_content' );
                 <div id="col-right">
                     <h3 class="voresh3">Ingredienser</h3>
                     <ul class="ingredients"></ul>
+                    <h3 class="voresh3">Vigtigste elementer</h3>
+
                     <div>
                         <img src="" alt="" class="ikon1">
                         <img src="" alt="" class="ikon2">
@@ -42,7 +44,7 @@ do_action( 'onepress_page_before_content' );
                     </div>
                 </div>
             </article>
-            <h3 class="voresh3">Fremgangsmåde</h3>
+            <h3 class="singleh3">Fremgangsmåde</h3>
             <p class="description"></p>
         </main>
     </section>

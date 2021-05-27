@@ -13,14 +13,18 @@ Author:      Sandie Petersen
 
 /* GENNEREL */
 
-
+.elementor-177 .elementor-element.elementor-element-9009fbd.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated p {
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
 .ingredients {
     margin-bottom: 2rem;
     line-height: 1.3rem;
 }
 
-
+.intro {
+    margin-bottom: 7rem;
+}
 
 .page-style,
 .site-content {
@@ -82,6 +86,21 @@ Author:      Sandie Petersen
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
     color: #333333;
+}
+
+.singleh3 {
+    font-size: 1.3rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    color: #333333;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.description {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
 }
 
 .forsideh3 {
@@ -244,7 +263,18 @@ p {
     flex-direction: row;
     justify-content: space-around;
     background-color: #E2D5C7;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+}
+
+#art-forside {
+    cursor: pointer;
+}
+
+#art-forside:hover {
+    animation-name: opskrift_kf;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
 }
 
 #art-forside img {
@@ -656,14 +686,17 @@ li {
 
 #col-right div {
     grid-column: 1 / 2;
-    margin: 1rem;
+    /*    margin: 1rem;*/
     padding: 1rem;
     padding-bottom: 0rem;
     display: flex;
     flex-direction: row;
+    margin-left: -3rem;
 }
 
-.ikon1, .ikon2, .ikon3 {
+.ikon1,
+.ikon2,
+.ikon3 {
     width: 10rem;
 }
 
@@ -709,14 +742,29 @@ li {
 /*KONTAKTSIDE*/
 
 #kontakttekst,
-#kontakttekst1 {
+#kontakttekst1,
+#kontakttekst2,
+#kontakttekst3 {
     font-family: 'EB Garamond', serif;
     font-size: 1.15rem;
     color: #333333;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /*KONTAKTSIDE SLUT*/
+
+/*OMSIDE*/
+
+/*
+.elementor-386 .elementor-element.elementor-element-1e96a1f9 .elementor-heading-title h2 {
+    font-size: 1.3rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    margin-top: 1rem;
+}
+*/
+
+/*OMSIDE SLUT*/
 
 /* FJERN KNAPPER FRA INPUT FELTER */
 
