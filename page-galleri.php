@@ -18,7 +18,7 @@ get_header();
 
 <div id="page-galleri" class="page-style">
     <h1 class="voresh1">Galleri</h1>
-    <p>I vores galleri kan du nyde ... <br>Hop forbi vores Instagram og se mere!</p>
+    <p id="galleribeskriv">I vores galleri kan du nyde de smukke, plantebaserede retter. <br>Hop forbi vores Instagram og se mere!</p>
 
     <section id="galleri-main"></section>
 
@@ -26,7 +26,9 @@ get_header();
 
 <template>
     <article class="article">
-        <img id="glimg" src="" alt="" class="image">
+        <a href="https://www.instagram.com/veaterycph/" target="_blank">
+            <img id="glimg" src="" alt="" class="image">
+        </a>
     </article>
 </template>
 

@@ -28,7 +28,7 @@ get_header();
     <h1 id="h1-menu" class="voresh1">Uge 24</h1>
     <p id="menu-beskrivelse">Hos Veatery arbejder vi med ugentlige menuer, da alle vores retter er sæsonbaseret. Hele menuen er vegetarisk med veganske alternativer. <br>
         Du kan enten bestille til én dag, eller til hele ugen, og til det antal personer du ønsker. <br>
-        Du skal dog forudbestille din takeaway da vi altid har et max antal portion vi kan producere på en dag.
+        Husk at forudbestille din takeaway da vi altid har et max antal portion vi kan producere på en dag.
     </p>
 
     <section id="menu-main"></section>

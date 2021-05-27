@@ -13,17 +13,31 @@ Author:      Sandie Petersen
 
 /* GENNEREL */
 
+li {
+    color: #333333;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.15rem;
+}
+
+.ingredients {
+    margin-bottom: 2rem;
+    line-height: 1.3rem;
+}
+
+.valgt {
+    color: #E2D5C7 !important;
+    border-color: #E2D5C7 !important;
+    background-color: #58685e !important;
+}
+
 .page-style {
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: #E2D5C7;
+    background-color: #f7ece0;
 }
 
-#page-galleri {
-    margin-bottom: 4rem;
-}
 
 .voresh1 {
     font-size: 3.5rem;
@@ -40,7 +54,7 @@ Author:      Sandie Petersen
 #h2-menu {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
-    color: black;
+    color: #333333;
 }
 
 #h1-bestilling {
@@ -58,24 +72,27 @@ Author:      Sandie Petersen
     font-size: 1.3rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
-    color: black;
+    color: #333333;
 }
 
 p {
     font-family: 'EB Garamond', serif;
-    font-size: 1.099rem;
-    color: black;
+    font-size: 1.15rem;
+    color: #333333;
 }
+
+
 
 /* GENNEREL SLUT */
 
 /*KNAPPER*/
 
-.buttons, .filter {
+.buttons,
+.filter {
     font-family: 'Noto Sans JP', sans-serif;
     color: #58685e;
     border-color: #58685e;
-    background-color: #d6cab3;
+    background-color: #E2D5C7;
     font-weight: bold;
     padding: 10px 15px 10px 15px;
     cursor: pointer;
@@ -85,21 +102,28 @@ p {
     margin-top: 2rem;
 }
 
-.buttons:active, .filter:active {
-    color: #d6cab3;
-    border-color: #d6cab3;
+.buttons:active,
+.filter:active {
+    color: #E2D5C7;
+    border-color: #E2D5C7;
     background-color: #58685e;
 }
 
-.buttons:hover, .filter:hover {
-    color: #d6cab3;
-    border-color: #d6cab3;
+.buttons:hover,
+.filter:hover {
+    color: #E2D5C7;
+    border-color: #E2D5C7;
     background-color: #58685e;
+}
+
+.buttons:focus,
+.filter:focus {
+    outline: none;
 }
 
 .buttons:visited {
-    color: #d6cab3;
-    border-color: #d6cab3;
+    color: #E2D5C7;
+    border-color: #E2D5C7;
     background-color: #58685e;
 }
 
@@ -107,7 +131,7 @@ p {
     font-family: 'Noto Sans JP', sans-serif;
     color: #58685e;
     border-color: #58685e;
-    background-color: #d6cab3;
+    background-color: #E2D5C7;
     font-weight: bold;
     padding: 10px 15px 10px 15px;
     cursor: pointer;
@@ -115,21 +139,25 @@ p {
 }
 
 .menubutton:active {
-    color: #d6cab3;
-    border-color: #d6cab3;
+    color: #E2D5C7;
+    border-color: #E2D5C7;
     background-color: #58685e;
 }
 
 .menubutton:hover {
-    color: #d6cab3;
-    border-color: #d6cab3;
+    color: #E2D5C7;
+    border-color: #E2D5C7;
     background-color: #58685e;
 }
 
 .menubutton:visited {
-    color: #d6cab3;
-    border-color: #d6cab3;
+    color: #E2D5C7;
+    border-color: #E2D5C7;
     background-color: #58685e;
+}
+
+.menubutton:focus {
+    outline: none;
 }
 
 
@@ -162,7 +190,7 @@ p {
         grid-template-columns: 1fr 2fr;
         margin-bottom: 2rem;
         padding: 1rem;
-        background-color: #D6CAB3;
+        background-color: #E2D5C7;
     }
 
     .menu-image {
@@ -192,7 +220,8 @@ p {
 #order,
 #delivery,
 #payment {
-    background-color: #D6CAB3;
+    background-color: #f7ece0;
+    border: 2px solid #333333;
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -252,6 +281,56 @@ p {
     border-bottom: none;
 }
 
+#bestil-beskriv {
+    margin-left: 10rem;
+    margin-bottom: 2.5rem;
+}
+
+.kontaktos {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.kontaktos:hover {
+    color: #909d82;
+}
+
+.bestilknap {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #58685e;
+    border-color: #58685e;
+    background-color: #E2D5C7;
+    font-weight: bold;
+    padding: 10px 60px 10px 60px;
+    cursor: pointer;
+    text-shadow: none;
+    margin-left: 40%;
+
+}
+
+.bestilknap:active {
+    color: #E2D5C7;
+    border-color: #E2D5C7;
+    background-color: #58685e;
+}
+
+.bestilknap:hover {
+    color: #E2D5C7;
+    border-color: #E2D5C7;
+    background-color: #58685e;
+}
+
+.bestilknap:visited {
+    color: #E2D5C7;
+    border-color: #E2D5C7;
+    background-color: #58685e;
+}
+
+.bestilknap:focus {
+    outline: none;
+
+}
+
 /** bestilling personlige oplysninger slut **/
 
 /** bestilling maden **/
@@ -264,7 +343,7 @@ p {
 }
 
 .stripe {
-    background-color: #EADBBE;
+    background-color: #E2D5C7;
 }
 
 #day {
@@ -303,7 +382,7 @@ p {
     font-family: 'Noto Sans JP', sans-serif;
     color: #58685e;
     border-color: #58685e;
-    background-color: #d6cab3;
+    background-color: #E2D5C7;
     font-weight: bold;
     padding: 10px 15px 10px 15px;
     cursor: pointer;
@@ -314,9 +393,14 @@ p {
 
 .minus:hover,
 .plus:hover {
-    color: #d6cab3;
-    border-color: #d6cab3;
+    color: #E2D5C7;
+    border-color: #E2D5C7;
     background-color: #58685e;
+}
+
+.minus:focus,
+.plus:focus {
+    outline: none;
 }
 
 /** bestilling maden slut **/
@@ -338,7 +422,7 @@ p {
         margin-right: 10rem;
         font-family: 'EB Garamond', serif;
         font-size: 1.099rem;
-        color: black;
+        color: #333333;
     }
 
     #bestilling-style h2 {
@@ -416,7 +500,7 @@ p {
 }
 
 .opskrift-article:hover {
-    background-color: #D6CAB3;
+    background-color: #E2D5C7;
     animation-name: opskrift_kf;
     animation-duration: 0.3s;
     animation-fill-mode: both;
@@ -441,6 +525,14 @@ p {
 
 /* SINGLE VIEW */
 
+.singletitle {
+
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: -4.5rem;
+
+}
+
 .page-header {
     display: none;
 }
@@ -459,7 +551,8 @@ p {
 
 #col-left img {
     grid-column: 1 / 2;
-    width: 100%;
+    width: 80%;
+    margin-left: 2rem;
 }
 
 #col-left div {
@@ -475,7 +568,9 @@ p {
 #col-right {
     grid-column: 2 / 3;
     padding-left: 2rem;
+    padding-right: 2rem;
 }
+
 /* SINGLE VIEW SLUT */
 
 /* GALLERI */
@@ -483,13 +578,28 @@ p {
 #galleri-main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 30px;
-    cursor: pointer;
+    grid-gap: 10px;
+    margin-right: 2rem;
 }
 
 #glimg {
-    height: 19rem;
-    width: 19rem;
+    height: 17rem;
+    width: 17rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+}
+
+#glimg:hover {
+    animation-name: opskrift_kf;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+#galleribeskriv {
+    margin-left: 2rem;
 }
 
 /* GALLERI SLUT */

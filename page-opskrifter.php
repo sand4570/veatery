@@ -26,10 +26,10 @@ get_header();
 <div class="page-style">
 
     <h1 class="voresh1">Opskrifter</h1>
-    <p id="opskrift-beskrivelse">Her kan du få inspiration til hvordan du selv kan lave dine egne plantebaserede retter. <br> Retterne er udarbejdet af Team Veatery, og de er alle enten vegetariske eller veganske. <br> </p>
+    <p id="opskrift-beskrivelse">Her kan du få inspiration til hvordan du selv kan lave dine egne plantebaserede retter. <br> Retterne er udarbejdet af Team Veatery, og de er alle enten vegetariske eller veganske. <br> Vi har opdelt retterne i årstider, så du kan se hvilke råvarer der er i sæson.</p>
 
     <nav id="filter">
-        <button data-opskrift="alle" class="valgt alleknap buttons">Alle</button>
+        <button data-opskrift="alle" class="valgt alleknap buttons">Alle opskrifter</button>
     </nav>
 
     <section id="recipe-main"></section>
