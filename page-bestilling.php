@@ -133,7 +133,7 @@ get_header();
     function showFood() {
         console.log(order);
 
-        //Denne varabel tæller op efter hver linje bliver lavet.
+        //Denne varabel tæller op hver gang loopet køre
         let stripeCounter = 1;
 
         //et forEach loop der indsætter dataen om opskriften i de ønskede fælter fra templaten
