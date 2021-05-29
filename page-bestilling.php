@@ -102,7 +102,7 @@ get_header();
 </template>
 
 <script>
-    //variabel som vi bruger til at sætte lig JSON data som vi senre henter
+    //variabel som vi bruger til at sætte lig JSON data som vi senere henter
     let order;
 
     //Konstanter der definere elementer fra vores html
