@@ -167,14 +167,14 @@ get_header();
 
     }
 
-    //denne funktion aktiveres via unclick i stedet for en eventListener
+    //denne funktion aktiveres via onclick i stedet for en eventListener
     function plus(id) {
         //Her får vi mængden af retter man har valgt til at gå op
         document.querySelector("#order-amount-" + id).stepUp(1);
         total();
     }
 
-    //denne funktion aktiveres via unclick i stedet for en eventListener
+    //denne funktion aktiveres via 0nclick i stedet for en eventListener
     function minus(id) {
         //Her får vi mængden af retter man har valgt til at gå ned
         document.querySelector("#order-amount-" + id).stepDown(1);
