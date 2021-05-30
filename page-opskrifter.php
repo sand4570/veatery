@@ -70,7 +70,7 @@ get_header();
         getJson();
     }
 
-    //Her benytter vi fetch til at hente json data for opskrifter og tags, og sætter det derefter lig vores globale variabler. funktionerne showRecipe og showButtons køres
+    //Her benytter vi fetch til at hente json data for opskrifter og categories, og sætter det derefter lig vores globale variabler. funktionerne showRecipe og showButtons køres
     async function getJson() {
         let response = await fetch(url);
         let catresponse = await fetch(catUrl);
