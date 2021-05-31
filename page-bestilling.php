@@ -17,6 +17,7 @@ get_header();
 ?>
 
 <!--links til de google fonte vi benytter på siden-->
+
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
@@ -26,14 +27,14 @@ get_header();
 
 
 <div class="page-style">
-<!--    overskrift og beskrivelse på siden-->
+    <!--    overskrift og beskrivelse på siden-->
     <h1 id="h1-bestilling" class="voresh1">Bestilling</h1>
     <p id="bestil-beskriv">Bestilling skal foregå inden kl. 22.00 dagen før, da vi kun laver et bestemt antal kuverter om dagen for at undgå madspil. <br>
         Maden skal afhentes på dagen på vores adresse i Kødbyen mellem kl. 17.00-18.30. <br>Vi bor i køkkenfællesskabet Kitchen Collective der er et start-upfælleskab med andre madiværksættere. <br> <br>
 
         Vil du bestille catering til et event eller en begivenhed? Så <a href="https://neanderpetersen.dk/kea/10_eksamen/veatery/kontakt/" class="kontaktos">kontakt os</a> gerne. </p>
 
-<!--    section om personlig information fra brugeren-->
+    <!--    section om personlig information fra brugeren-->
     <div id="bestilling-style">
         <section id="info">
             <h2>Personlig information</h2>
@@ -49,7 +50,7 @@ get_header();
             </div>
         </section>
 
-<!--        section hvor ordren laves-->
+        <!--        section hvor ordren laves-->
         <section id="order">
             <h2>Maden</h2>
             <div id="food-section"></div>
@@ -59,17 +60,17 @@ get_header();
             </div>
         </section>
 
-<!--        section om levering-->
+        <!--        section om levering-->
         <section id="delivery">
             <h2>Levering</h2>
             <input type="radio" id="del1" name="delivery" value="0">
-            <label for="del1">Afhentning på Slagtehusgade 11 (Gratis)</label><br>
+            <label for="del1">Afhentning på Staldgade 11 (Gratis)</label><br>
             <input type="radio" id="del2" name="delivery" value="30">
             <label for="del2">Levering med byexpressen (30kr/km)</label>
 
         </section>
 
-<!--        section om betallingsmuligheder-->
+        <!--        section om betallingsmuligheder-->
         <section id="payment">
             <h2>Betaling</h2>
             <input type="radio" id="pay1" name="payment" value="0">
@@ -79,7 +80,7 @@ get_header();
 
         </section>
 
-<!--        knap der gennemfører bestilling-->
+        <!--        knap der gennemfører bestilling-->
         <a href="https://neanderpetersen.dk/kea/10_eksamen/veatery/tak/">
             <button class="bestilknap">BESTIL</button>
         </a>
@@ -93,7 +94,7 @@ get_header();
         <p id="food"></p>
         <p id="pris"></p>
         <div id="counter">
-<!--            tilhørende knapper til tilføjelse/fjernelse af varer. id for opskriften lægges til en dataatribut i html elementet og verdien refereres til i knappernes onclick funktioner, så knappen kædes sammen med opskriften-->
+            <!--            tilhørende knapper til tilføjelse/fjernelse af varer. id for opskriften lægges til en dataatribut i html elementet og verdien refereres til i knappernes onclick funktioner, så knappen kædes sammen med opskriften-->
             <button class="minus" data-order-amount="" onclick="minus(this.dataset.orderAmount)">-</button>
             <input type="number" id="order-amount-" class="amount" value="0" min=0>
             <button class="plus" data-order-amount="" onclick="plus(this.dataset.orderAmount)">+</button>
