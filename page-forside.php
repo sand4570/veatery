@@ -52,6 +52,8 @@ do_action( 'onepress_page_before_content' );
     </div>
     <!--#content-inside -->
 </div><!-- #content -->
+
+<!--template til visning af 3 opskrifter, der passer til ugensstjerne-->
 <template>
     <article id="art-forside" class="article">
         <img src="" alt="">
@@ -60,23 +62,29 @@ do_action( 'onepress_page_before_content' );
 </template>
 
 <script>
+    //variabler som vi bruger til at sætte lig JSON data som vi senre henter
     let recipes;
     let tags;
-    let arraycount = 0;
 
+    //Konstanter der definere elementer fra vores html
     const temp = document.querySelector("template");
     const opskriftSection = document.querySelector("#opskrift-section");
+    //constant, der er sat lig med id for den grøntsag/det tag der er ugens stjerne. Vil man ændre grøntsag/tag er det derfor nok at ændre tallet her
     const vegetableOfTheWeek = 16;
 
+    //Url'er vi bruger til at komme frem til vores json data via wordpress' restAPI
     const url = "https://neanderpetersen.dk/kea/10_eksamen/veatery/wp-json/wp/v2/opskrift?per_page=100";
     const tagUrl = "https://neanderpetersen.dk/kea/10_eksamen/veatery/wp-json/wp/v2/tags";
 
+    //Vi sikre at siden er loadrd og kører funktionen start
     document.addEventListener("DOMContentLoaded", start);
 
+    //funktionen getJson køres
     function start() {
         getJson();
     }
 
+    //Her benytter vi fetch til at hente json data for opskrifter og tags, og sætter det derefter lig vores globale variabler. funktionen showRecipe køres
     async function getJson() {
         let response = await fetch(url);
         let tagresponse = await fetch(tagUrl);
@@ -85,23 +93,37 @@ do_action( 'onepress_page_before_content' );
         showRecipe();
     }
 
+    //Her viser vi 3 opskrifter
     function showRecipe() {
         console.log(recipes);
         console.log("opskrifter");
         console.log(tags)
 
+        //maxRecipe sættes lig 3, da der max skal udskrives 3 opskrifter til siden
         let maxRecipes = 3;
+        //recipeCount sættes lig 0, da der til at starte med ikke er nogle opskrifter på siden
         let recipeCount = 0;
+
+        //Vi starter et forEach loop, der tjekker om hver enkelt opskrift indeholder id'et for denne uges grøntsag, så længe recipeCount er mindre end maxRecipies
         recipes.forEach(recipe => {
             if (recipe.tags.find(id => id === vegetableOfTheWeek) != undefined && recipeCount < maxRecipes) {
-                //TODO: sæt opskrit ind på siden
+
                 console.log(recipe)
 
+                //Hvis opskrifterne har det rigtige tag, sættes billede og titel ind i vores template.
                 const klon = temp.cloneNode(true).content;
                 klon.querySelector("img").src = recipe.billede.guid;
                 klon.querySelector("p").textContent = recipe.title.rendered;
 
+                //opskriften gøres klikbar så den fører til singleview for opskriften
+                klon.querySelector("article").addEventListener("click", () => {
+                    location.href = recipe.link;
+                })
+
+                //template med indhold placeres på den valgte section
                 opskriftSection.appendChild(klon);
+
+                //vi lægger 1 til recipeCount så den ved at der nu er 1 (eller flere) opskrift(er) på siden
                 recipeCount++;
             }
         })

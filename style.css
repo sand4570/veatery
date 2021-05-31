@@ -527,6 +527,17 @@ p {
     outline: none;
 }
 
+#peice-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 4.5rem;
+}
+
+#peice-wrapper p {
+    margin-left: 1rem;
+}
+
 /** bestilling maden slut **/
 
 /** bestilling levering **/
