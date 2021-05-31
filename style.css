@@ -213,6 +213,10 @@ p {
     padding: 0px;
 }
 
+#content .container {
+    padding: 0px;
+}
+
 #art-forside p {
     font-family: 'Noto Sans JP', sans-serif;
 }
@@ -220,32 +224,40 @@ p {
 #splash {
     background-image: url(https://neanderpetersen.dk/kea/10_eksamen/veatery/wp-content/uploads/2021/05/madret.jpg);
     width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    max-height: 90vh;
+    height: 90vh;
 }
-
-
 
 #forside-button {
     position: absolute;
-    left: 34.5vw;
-    top: 53vh;
+    left: 29vw;
+    top: 51vh;
 }
 
 #logo-splash {
     position: absolute;
     max-width: 15rem;
-    left: 33vw;
-    top: 16vh;
+    left: 23vw;
+    top: 25vh;
 }
 
-#page-wrapper {
-    margin-top: 35rem;
+
+#main .entry-content .page-wrapper {
+    margin-top: 2rem;
+    padding: 2rem;
+    max-width: 100vw;
+}
+
+.bean-img {
+    margin-left: 1rem;
+    width: 20rem;
 }
 
 #opskrift-section {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     background-color: #E2D5C7;
     margin-bottom: 4rem;
 }
@@ -254,24 +266,105 @@ p {
     cursor: pointer;
 }
 
-#art-forside:hover {
-    animation-name: opskrift_kf;
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-}
-
 #art-forside img {
     height: 20rem;
     margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    #content .container {
+        width: 100vw;
+        max-width: 100vw;
+        padding: 0px;
+    }
+
+    #main .entry-content .page-wrapper {
+        margin-top: 2rem;
+        padding: 2rem;
+        max-width: 100vw;
+    }
+
+    #forside-button {
+        left: 39vw;
+        top: 51vh;
+    }
+
+    #logo-splash {
+        left: 36vw;
+        top: 25vh;
+    }
+
+
+    .ugens-stjerne {
+        margin-top: 4rem;
+    }
+
+    .bean-img {
+        margin-left: 1rem;
+        width: 25rem;
+    }
+
+    #opskrift-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #E2D5C7;
+        margin-bottom: 4rem;
+    }
+
+    #art-forside img {
+        height: 13rem;
+        margin-top: 1.5rem;
+    }
 }
 
 @media (min-width: 992px) {
     #content .container {
         width: 100vw;
         max-width: 100vw;
-        height: 90vh;
         padding: 0px;
+    }
+
+    #main .entry-content .page-wrapper {
+        margin-top: 2rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        max-width: 100vw;
+        width: 100vw;
+    }
+
+     #forside-button {
+        left: 43vw;
+        top: 55vh;
+    }
+
+    #logo-splash {
+        left: 40vw;
+        top: 20vh;
+    }
+
+    #opskrift-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #E2D5C7;
+        margin-bottom: 4rem;
+    }
+
+    #art-forside {
+        cursor: pointer;
+    }
+
+    #art-forside:hover {
+        animation-name: opskrift_kf;
+        animation-duration: 0.3s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+    }
+
+    #art-forside img {
+        height: 20rem;
+        margin-top: 1.5rem;
     }
 }
 
@@ -858,11 +951,11 @@ li {
 }
 
 #glimg {
-        height: 17rem;
-        width: 17rem;
-        margin-left: 1rem;
-        margin-bottom: 2rem;
-    }
+    height: 17rem;
+    width: 17rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
 
 #galleribeskriv {
     margin-left: 2rem;
