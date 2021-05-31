@@ -852,29 +852,49 @@ li {
 
 #galleri-main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 10px;
     margin-right: 2rem;
 }
 
 #glimg {
-    height: 17rem;
-    width: 17rem;
-    margin-left: 2rem;
-    cursor: pointer;
-    margin-bottom: 2rem;
-
-}
-
-#glimg:hover {
-    animation-name: opskrift_kf;
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-}
+        height: 17rem;
+        width: 17rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
 
 #galleribeskriv {
     margin-left: 2rem;
+}
+
+@media screen and (min-width:760px) {
+    #galleri-main {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    #glimg {
+        margin-bottom: auto;
+    }
+}
+
+@media screen and (min-width:900px) {
+    #galleri-main {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    #glimg {
+        margin-left: 2rem;
+        cursor: pointer;
+        margin-bottom: 2rem;
+    }
+
+    #glimg:hover {
+        animation-name: opskrift_kf;
+        animation-duration: 0.3s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+    }
 }
 
 /* GALLERI SLUT */
@@ -890,6 +910,8 @@ li {
     color: #333333;
     font-weight: 600;
 }
+
+
 
 /*KONTAKTSIDE SLUT*/
 
