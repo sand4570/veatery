@@ -28,8 +28,9 @@ do_action( 'onepress_page_before_content' );
 
 
                 <div id="col-left">
-                    <img src="" alt="" class="billede">
-
+                    <figure>
+                        <img src="" alt="opskriftbillede" class="billede">
+                    </figure>
                 </div>
 
                 <div id="col-right">
@@ -38,9 +39,11 @@ do_action( 'onepress_page_before_content' );
                     <h3 class="voresh3">Vigtigste elementer</h3>
 
                     <div>
-                        <img src="" alt="" class="ikon1">
-                        <img src="" alt="" class="ikon2">
-                        <img src="" alt="" class="ikon3">
+                        <figure>
+                            <img src="" alt="grafik" class="ikon1">
+                            <img src="" alt="grafik" class="ikon2">
+                            <img src="" alt="grafik" class="ikon3">
+                        </figure>
                     </div>
                 </div>
             </article>
