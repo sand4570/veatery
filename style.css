@@ -130,8 +130,9 @@ p {
     color: #333333;
 }
 
-
-
+.ugensstjernebrocoli {
+    margin-top: 6vw;
+}
 
 .omimg {
     width: 35vw;
@@ -252,8 +253,8 @@ p {
     width: 100vw;
     height: 84vh;
     position: absolute;
-    left: -10.4vw;
-    top: -5vh;
+    left: -12.1vw;
+    top: -11.4vh;
     object-fit: cover;
 
 }
@@ -619,7 +620,7 @@ p {
     padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 0.5;
+    padding-bottom: 0.5rem;
 }
 
 .opskrift-article:hover {
