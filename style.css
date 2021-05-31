@@ -61,9 +61,7 @@ Author:      Sandie Petersen
     color: #333333;
 }
 
-#h1-bestilling {
-    margin-left: 10rem;
-}
+
 
 .voresh2 {
     font-size: 1.3rem;
@@ -345,7 +343,7 @@ p {
     }
 }
 
-/** media query for menu mobil **/
+/** media query for menu web **/
 @media screen and (min-width:380px) {
     #menu-main {
         margin-left: 10rem;
@@ -394,11 +392,20 @@ p {
     margin-bottom: 2rem;
 }
 
+#bestil-beskriv {
+    margin-bottom: 2.5rem;
+}
+
 #info-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 1rem;
+}
+
+#info-container input {
+    height: 50px;
+    width: 150px;
 }
 
 #p1 {
@@ -449,10 +456,7 @@ p {
     border-bottom: none;
 }
 
-#bestil-beskriv {
-    margin-left: 10rem;
-    margin-bottom: 2.5rem;
-}
+
 
 .kontaktos {
     color: #333333;
@@ -504,10 +508,15 @@ p {
 
 /** bestilling maden **/
 
+#food-section {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 #art-order {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     padding: 1rem;
 }
 
@@ -532,6 +541,8 @@ p {
 
 #counter {
     justify-self: end;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
 }
 
 #counter input {
@@ -575,7 +586,7 @@ p {
 #peice-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 1rem;
 }
 
@@ -597,6 +608,52 @@ height: 2.5rem;
 }
 
 /** bestilling levering slut **/
+
+/**media query for bestilling tablet **/
+@media screen and (min-width:760px) {
+    #bestil-beskriv {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    #h1-bestilling {
+        margin-left: 10rem;
+    }
+
+    #info-container input {
+        height: auto;
+        width: auto;
+    }
+
+    #peice-wrapper {
+        justify-content: flex-end;
+    }
+
+     #food-section #art-order {
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #food-section #day {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #food-section #food {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #food-section #pris {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #food-section #counter {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+}
 
 /** media query for bestilling web **/
 @media screen and (min-width:380px) {
@@ -620,13 +677,7 @@ height: 2.5rem;
         grid-template-rows: repeat(4, 1fr);
     }
 
-
-    #food-section {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    #art-order {
+ #art-order {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
@@ -646,12 +697,13 @@ height: 2.5rem;
         grid-row: 1 / 2;
     }
 
-
-
     #counter input {
         grid-column: 4 / 5;
         grid-row: 1 / 2;
-    }
+    }s
+
+
+
 
 }
 

@@ -39,7 +39,7 @@ get_header();
         <section id="info">
             <h2>Personlig information</h2>
             <div id="info-container">
-                <label for="f-name" id="p1">Fornavn</label>
+                <p id="p1">Fornavn</p>
                 <input id="f-name" type="text">
                 <p id="p2">Efternavn</p>
                 <input id="e-name" type="text">
@@ -159,7 +159,7 @@ get_header();
                 klon.querySelector("#art-order").classList.add("stripe");
             }
 
-            Her sættes template klonen ind i foodSection
+            //Her sættes template klonen ind i foodSection
             foodSection.appendChild(klon);
 
             //stipecounter tæller op med 1 så den skiftevis er et lige eller ulige tal
