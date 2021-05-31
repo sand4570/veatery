@@ -31,6 +31,8 @@ do_action( 'onepress_page_before_content' );
 
                 <?php while ( have_posts() ) : the_post(); ?>
 
+
+
                 <?php get_template_part( 'template-parts/content', 'page' ); ?>
 
                 <?php
@@ -52,6 +54,8 @@ do_action( 'onepress_page_before_content' );
     </div>
     <!--#content-inside -->
 </div><!-- #content -->
+
+
 
 <!--template til visning af 3 opskrifter, der passer til ugensstjerne-->
 <template>
