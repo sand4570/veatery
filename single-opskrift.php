@@ -17,16 +17,15 @@ $layout = onepress_get_layout();
 do_action( 'onepress_page_before_content' );
 ?>
 
-<div class="page-style">
+<div id="page-single" class="page-style">
     <section id="primary" class="content-area">
-        <main id="main" class="site-main">
+        <main id="main-single" class="site-main">
 
             <button class="singletilbage buttons">Tilbage</button>
             <h2 class="title singletitle"></h2>
 
+
             <article id="opskriftgrid">
-
-
                 <div id="col-left">
                     <figure>
                         <img src="" alt="opskriftbillede" class="billede">
@@ -34,10 +33,9 @@ do_action( 'onepress_page_before_content' );
                 </div>
 
                 <div id="col-right">
+
                     <h3 class="voresh3">Ingredienser</h3>
                     <ul class="ingredients"></ul>
-                    <h3 class="voresh3">Vigtigste elementer</h3>
-
                     <div>
                         <figure>
                             <img src="" alt="grafik" class="ikon1">
@@ -47,6 +45,7 @@ do_action( 'onepress_page_before_content' );
                     </div>
                 </div>
             </article>
+
             <h3 class="singleh3">Fremgangsmåde</h3>
             <p class="description"></p>
         </main>

@@ -55,7 +55,7 @@ get_header();
             <h2>Maden</h2>
             <div id="food-section"></div>
             <div id="peice-wrapper">
-                <p>Samlet pris</p>
+                <p>Total</p>
                 <p id="samlet-pris">0 kr</p>
             </div>
         </section>

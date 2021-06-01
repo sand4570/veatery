@@ -17,6 +17,10 @@ Author:      Sandie Petersen
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+.breadcrumbs {
+    display: none;
+}
+
 .ingredients {
     margin-bottom: 2rem;
     line-height: 1.3rem;
@@ -223,23 +227,25 @@ p {
 
 #splash {
     background-image: url(https://neanderpetersen.dk/kea/10_eksamen/veatery/wp-content/uploads/2021/05/madret.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     max-width: 100vw;
     max-height: 90vh;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#logo-splash {
+    max-width: 15rem;
 }
 
 #forside-button {
-    position: absolute;
-    left: 29vw;
-    top: 51vh;
-}
-
-#logo-splash {
-    position: absolute;
-    max-width: 15rem;
-    left: 23vw;
-    top: 25vh;
+    margin: 0;
 }
 
 
@@ -284,24 +290,13 @@ p {
         max-width: 100vw;
     }
 
-    #forside-button {
-        left: 39vw;
-        top: 51vh;
-    }
-
-    #logo-splash {
-        left: 36vw;
-        top: 25vh;
-    }
-
-
     .ugens-stjerne {
         margin-top: 4rem;
     }
 
     .bean-img {
         margin-left: 1rem;
-        width: 25rem;
+        max-width: 25rem;
     }
 
     #opskrift-section {
@@ -327,20 +322,16 @@ p {
 
     #main .entry-content .page-wrapper {
         margin-top: 2rem;
-        padding-left: 10rem;
-        padding-right: 10rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
         max-width: 100vw;
         width: 100vw;
     }
 
-     #forside-button {
-        left: 43vw;
-        top: 55vh;
-    }
-
-    #logo-splash {
-        left: 40vw;
-        top: 20vh;
+    .bean-img {
+        margin-left: 1rem;
+        max-width: 25rem;
+        width: 25rem;
     }
 
     #opskrift-section {
@@ -363,8 +354,28 @@ p {
     }
 
     #art-forside img {
-        height: 20rem;
+        height: 15rem;
         margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .bean-img {
+        margin-left: 1rem;
+        max-width: 35rem;
+        width: 35rem;
+    }
+
+    #main .entry-content .page-wrapper {
+        margin-top: 2rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        max-width: 100vw;
+        width: 100vw;
+    }
+
+    #art-forside img {
+        height: 20rem;
     }
 }
 
@@ -680,11 +691,14 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 1rem;
+    background-color: #e2d5c7;
+    padding-top: 1rem;
 }
 
 #peice-wrapper p {
     margin-left: 1rem;
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
 
 background-color width: 9rem;
@@ -718,10 +732,6 @@ height: 2.5rem;
         width: auto;
     }
 
-    #peice-wrapper {
-        justify-content: flex-end;
-    }
-
     #food-section #art-order {
         grid-template-columns: 1fr 1fr 2fr;
         grid-template-rows: 1fr 1fr;
@@ -749,7 +759,7 @@ height: 2.5rem;
 }
 
 /** media query for bestilling web **/
-@media screen and (min-width:380px) {
+@media screen and (min-width:900px) {
 
     #bestilling-style {
         margin-left: 10rem;
@@ -795,7 +805,7 @@ height: 2.5rem;
         grid-row: 1 / 2;
     }
 
-    s
+
 }
 
 /* BESTILLING SLUT */
@@ -882,11 +892,24 @@ height: 2.5rem;
 /* SINGLE VIEW */
 
 .singletitle {
-
     text-align: center;
     margin-bottom: 3rem;
     margin-top: -4.5rem;
+}
 
+.singletilbage {
+    margin-left: 0;
+}
+
+.page-style #primary {
+    background-color: #E2D5C7;
+    padding-top: 0px;
+}
+
+#main-single {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 100vw;
 }
 
 li {
@@ -899,118 +922,152 @@ li {
     display: none;
 }
 
-.page-style #primary {
-    background-color: #E2D5C7;
-    width: 90vw;
-    float: none;
-    padding-top: 0px;
-}
 
 #opskriftgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
 }
 
 #col-left img {
-    grid-column: 1 / 2;
-    width: 80%;
-    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 #col-right div {
-    grid-column: 1 / 2;
-    /*    margin: 1rem;*/
-    padding: 1rem;
-    padding-bottom: 0rem;
     display: flex;
     flex-direction: row;
-    margin-left: -3rem;
 }
 
 .ikon1,
 .ikon2,
 .ikon3 {
-    width: 10rem;
-}
-
-#col-right {
-    grid-column: 2 / 3;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-/* SINGLE VIEW SLUT */
-
-/* GALLERI */
-
-#galleri-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
-    margin-right: 2rem;
-}
-
-#glimg {
-    height: 17rem;
-    width: 17rem;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-}
-
-#galleribeskriv {
-    margin-left: 2rem;
+    width: 5rem;
 }
 
 @media screen and (min-width:760px) {
-    #galleri-main {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    .page-style #primary {
+        background-color: #E2D5C7;
+        padding-top: 0px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        max-width: 80vw;
     }
 
-    #glimg {
-        margin-bottom: auto;
+    #opskriftgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    #col-left img {
+        grid-column: 1 / 2;
     }
 }
 
 @media screen and (min-width:900px) {
-    #galleri-main {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    #page-single {
+        height: 100%;
     }
 
-    #glimg {
-        margin-left: 2rem;
-        cursor: pointer;
+    .page-style #primary {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        max-width: 80vw;
         margin-bottom: 2rem;
     }
 
-    #glimg:hover {
-        animation-name: opskrift_kf;
-        animation-duration: 0.3s;
-        animation-fill-mode: both;
-        animation-iteration-count: 1;
+    #col-left img {
+        margin-left: 2rem;
+        width: 30rem;
     }
-}
 
-/* GALLERI SLUT */
+    .singletitle {
+        margin-left: 7rem;
+    }
 
-/*KONTAKTSIDE*/
+    .ikon1,
+    .ikon2,
+    .ikon3 {
+        width: 10rem;
+    }
 
-#kontakttekst,
-#kontakttekst1,
-#kontakttekst2,
-#kontakttekst3 {
-    font-family: 'EB Garamond', serif;
-    font-size: 1.15rem;
-    color: #333333;
-    font-weight: 600;
-}
+    /* SINGLE VIEW SLUT */
+
+    /* GALLERI */
+
+    #galleri-main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 10px;
+        margin-right: 2rem;
+    }
 
 
+    #glimg {
+        height: 17rem;
+        width: 17rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
 
-/*KONTAKTSIDE SLUT*/
+    #galleribeskriv {
+        margin-left: 2rem;
+    }
 
-/*OMSIDE*/
+    @media screen and (min-width:760px) {
+        #galleri-main {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
 
-/*
+        #glimg {
+            margin-bottom: auto;
+        }
+    }
+
+    @media screen and (min-width:900px) {
+        #galleri-main {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        #glimg {
+            margin-left: 2rem;
+            cursor: pointer;
+            margin-bottom: 2rem;
+        }
+
+        #glimg:hover {
+            animation-name: opskrift_kf;
+            animation-duration: 0.3s;
+            animation-fill-mode: both;
+            animation-iteration-count: 1;
+        }
+    }
+
+    /* GALLERI SLUT */
+
+    /*KONTAKTSIDE*/
+
+    #kontakttekst,
+    #kontakttekst1,
+    #kontakttekst2,
+    #kontakttekst3 {
+        font-family: 'EB Garamond', serif;
+        font-size: 1.15rem;
+        color: #333333;
+        font-weight: 600;
+    }
+
+    @media screen and (max-width:380) {
+        .elementor-section-wrap #emballage-wrapper .elementor-column-gap-default {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    /*KONTAKTSIDE SLUT*/
+
+    /*OMSIDE*/
+
+    /*
 .elementor-386 .elementor-element.elementor-element-1e96a1f9 .elementor-heading-title h2 {
     font-size: 1.3rem;
     font-family: 'Noto Sans JP', sans-serif;
@@ -1019,18 +1076,18 @@ li {
 }
 */
 
-/*OMSIDE SLUT*/
+    /*OMSIDE SLUT*/
 
-/* FJERN KNAPPER FRA INPUT FELTER */
+    /* FJERN KNAPPER FRA INPUT FELTER */
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 
-/* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
-}
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
