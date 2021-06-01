@@ -17,6 +17,7 @@ get_header();
 ?>
 
 <!--links til de google fonte vi benytter på siden-->
+
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
@@ -29,7 +30,12 @@ get_header();
     <h1 class="voresh1">Opskrifter</h1>
     <p id="opskrift-beskrivelse">Her kan du få inspiration til hvordan du selv kan lave dine egne plantebaserede retter. <br> Retterne er udarbejdet af Team Veatery, og de er alle enten vegetariske eller veganske. <br> Vi har opdelt retterne i årstider, så du kan se hvilke råvarer der er i sæson.</p>
 
-<!--    Her laves knappen, der viser alle opskrifter, og den får class = valgt-->
+    <!--    Denne knap bruges til at lave en kollapset filtreringsmanu når siden vises på en mobil-->
+    <div id="filter-collapse">
+        <button class="buttons">Vælg filter</button>
+    </div>
+
+    <!--    Her laves knappen, der viser alle opskrifter, og den får class = valgt-->
     <nav id="filter">
         <button data-opskrift="alle" class="valgt alleknap buttons">Alle opskrifter</button>
     </nav>
@@ -65,9 +71,10 @@ get_header();
     //Vi sikre at siden er loadrd og kører funktionen start
     document.addEventListener("DOMContentLoaded", start);
 
-    //funktionen getJson køres
+    //funktionerne getJson og filterburger køres
     function start() {
         getJson();
+        filterburger()
     }
 
     //Her benytter vi fetch til at hente json data for opskrifter og categories, og sætter det derefter lig vores globale variabler. funktionerne showRecipe og showButtons køres
@@ -143,6 +150,19 @@ get_header();
             }
         })
 
+    }
+
+    //Denne funktion aktiverer den gemte filtreringsmenu på mobil.
+    function filterburger() {
+        let burger = document.querySelector("#filter-collapse button").addEventListener("click", () => {
+            let filterGroup = document.querySelector("#filter");
+            if (filterGroup.style.display === "") {
+                filterGroup.style.display = "flex";
+            } else {
+                filterGroup.style.display = "";
+                burger.classList.remove("valgt")
+            }
+        })
     }
 
 </script>

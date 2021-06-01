@@ -818,7 +818,22 @@ height: 2.5rem;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 30px;
     cursor: pointer;
+}
 
+#filter-collapse {
+    display: flex;
+    justify-content: center;
+}
+
+#filter {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+#filter button {
+    margin-bottom: 0;
 }
 
 #opimg {
@@ -839,8 +854,6 @@ height: 2.5rem;
     padding-bottom: 0.5rem;
 }
 
-
-
 #opskrift-beskrivelse {
     margin-left: 2rem;
 }
@@ -849,6 +862,14 @@ height: 2.5rem;
     #recipe-main {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         margin: 2rem;
+    }
+
+    #filter-collapse {
+        display: none;
+    }
+
+    #filter {
+        display: block;
     }
 }
 
