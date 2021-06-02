@@ -36,13 +36,6 @@ do_action( 'onepress_page_before_content' );
 
                     <h3 class="voresh3">Ingredienser</h3>
                     <ul class="ingredients"></ul>
-                    <div>
-                        <figure>
-                            <img src="" alt="grafik" class="ikon1">
-                            <img src="" alt="grafik" class="ikon2">
-                            <img src="" alt="grafik" class="ikon3">
-                        </figure>
-                    </div>
                 </div>
             </article>
 
@@ -86,35 +79,7 @@ do_action( 'onepress_page_before_content' );
         document.querySelector(".description").textContent = opskrift.fremgang;
         document.querySelector(".ingredients").innerHTML = opskrift.ingredienser;
         document.querySelector(".billede").src = opskrift.billede.guid;
-        document.querySelector(".ikon1").src = opskrift.ikon1.guid;
-        document.querySelector(".ikon2").src = opskrift.ikon2.guid;
-        document.querySelector(".ikon3").src = opskrift.ikon3.guid;
-
     }
-
-
-    //    function visEpisoder() {
-    //        console.log("viserEpisoderne");
-    //        let temp = document.querySelector("template");
-    //        episoder.forEach(episode => {
-    //            console.log("loop id:", aktuelpodcast);
-    //            if (episode.horer_til_podcast[0].id == aktuelpodcast) {
-    //                console.log("loop kører id:", aktuelpodcast);
-    //                let klon = temp.cloneNode(true).content;
-    //                klon.querySelector("h3").innerHTML = episode.title.rendered;
-    //                klon.querySelector("img").src = episode.billede.guid;
-    //                klon.querySelector(".beskrivelse").innerHTML = episode.episodenr;
-    //
-    //                klon.querySelector("article").addEventListener("click", () => {
-    //                    location.href = episode.link;
-    //                })
-    //
-    //                klon.querySelector("button").href = episode.link;
-    //                console.log("episode", episode.link);
-    //                container.appendChild(klon);
-    //            }
-    //        })
-    //    }
 
     tilbageKnap();
     //sendeplanKnap();

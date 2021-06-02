@@ -44,7 +44,7 @@ Author:      Sandie Petersen
     font-size: 3.5rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
-    margin-left: 1.5rem;
+    /*margin-left: 1.5rem;*/
 
 }
 
@@ -130,9 +130,7 @@ p {
     color: #333333;
 }
 
-.ugensstjernebrocoli {
-    margin-top: 6vw;
-}
+
 
 .omimg {
     width: 35vw;
@@ -162,6 +160,9 @@ p {
     margin-left: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    border: solid;
+    border-width: 2.8px;
+    border-radius: 5px;
 }
 
 .buttons:active,
@@ -171,7 +172,7 @@ p {
     background-color: #58685e;
 }
 
-.buttons:hover,
+.buttons:not(#filter-collapse button):hover,
 .filter:hover {
     color: #E2D5C7;
     border-color: #E2D5C7;
@@ -206,7 +207,6 @@ p {
 
 /* FORSIDE */
 
-
 .site-content {
     padding-left: 0rem;
     padding-right: 0rem;
@@ -219,6 +219,11 @@ p {
 
 #content .container {
     padding: 0px;
+}
+
+.ugens-stjerne {
+    margin-top: 4rem;
+    flex-direction: column-reverse;
 }
 
 #art-forside p {
@@ -292,6 +297,7 @@ p {
 
     .ugens-stjerne {
         margin-top: 4rem;
+        flex-direction: row;
     }
 
     .bean-img {
@@ -392,7 +398,7 @@ p {
         margin-bottom: 2rem;
     }
 
-    .ugens-stjerne img {
+    .bean-img {
         margin-top: 3rem;
         max-width: none;
         width: 120%;
@@ -403,21 +409,26 @@ p {
 
 @media (min-width: 1500px) {
     .bean-img {
-        margin-left: 1rem;
+        margin-left: 0rem;
         max-width: 35rem;
         width: 35rem;
     }
 
     #main .entry-content .page-wrapper {
         margin-top: 2rem;
-        padding-left: 10rem;
-        padding-right: 10rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
         max-width: 100vw;
         width: 100vw;
     }
 
     #art-forside img {
         height: 20rem;
+    }
+
+    .ugens-stjerne h3,
+    .ugens-stjerne p {
+        padding-left: 2rem;
     }
 }
 
@@ -434,10 +445,7 @@ p {
     padding: 1rem;
 }
 
-#opskriftgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 
 .menubutton {
     font-family: 'Noto Sans JP', sans-serif;
@@ -449,6 +457,9 @@ p {
     cursor: pointer;
     text-shadow: none;
     margin-bottom: 1rem;
+    border: solid;
+    border-width: 2.8px;
+    border-radius: 5px;
 }
 
 .menubutton:active {
@@ -463,11 +474,21 @@ p {
     background-color: #58685e;
 }
 
+#menu-main {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 /** media query for tablet **/
 @media screen and (min-width:768px) {
 
+    #menu-main {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
     #h1-menu {
-        margin-left: 10rem;
+        margin-left: 6rem;
     }
 
     .page-style {
@@ -475,34 +496,23 @@ p {
         padding-right: 0rem;
     }
 
-    #art-menu {
-        display: block;
-    }
-
-    #art-menu img {
-        height: auto;
-        margin-top: 4rem;
+    #opskriftgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     #menu-beskrivelse {
-        margin-right: 10rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
 }
 
 /** media query for menu web **/
-@media screen and (min-width:380px) {
-    #menu-main {
-        margin-left: 10rem;
-        margin-right: 10rem;
-        display: flex;
-        flex-direction: column-reverse;
-    }
+@media screen and (min-width:900px) {
 
     #art-menu {
         display: grid;
         grid-template-columns: 1fr 2fr;
-
-
     }
 
     .menu-image {
@@ -517,23 +527,8 @@ p {
     }
 
     #menu-beskrivelse {
-        margin-left: 10rem;
+        margin-left: 6rem;
         margin-bottom: 2.5rem;
-    }
-
-    @media screen and (min-width:1350px) {
-        #art-menu img {
-            margin-top: 0rem;
-        }
-
-        #txt {
-            margin-left: -3rem;
-            margin-right: 5rem;
-        }
-
-        .tak {
-            margin-left: 2rem;
-        }
     }
 }
 
@@ -635,8 +630,11 @@ p {
     background-color: #E2D5C7;
     font-weight: bold;
     padding: 10px 60px 10px 60px;
-    margin-left: 40%;
+    margin-left: 20%;
     cursor: pointer;
+    border: solid;
+    border-width: 2.8px;
+    border-radius: 5px;
 }
 
 
@@ -730,6 +728,9 @@ p {
     text-shadow: none;
     width: 43px;
     height: 43px;
+    border: solid;
+    border-width: 2.8px;
+    border-radius: 5px;
 }
 
 .minus:hover,
@@ -775,13 +776,25 @@ height: 2.5rem;
 
 /**media query for bestilling tablet **/
 @media screen and (min-width:760px) {
+    #bestilling-style {
+        margin-left: 6rem;
+        margin-right: 6rem;
+        font-family: 'EB Garamond', serif;
+        font-size: 1.099rem;
+        color: #333333;
+    }
+
     #bestil-beskriv {
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .bestilknap {
+        margin-left: 35%;
     }
 
     #h1-bestilling {
-        margin-left: 10rem;
+        margin-left: 6rem;
     }
 
     #info-container input {
@@ -817,14 +830,6 @@ height: 2.5rem;
 
 /** media query for bestilling web **/
 @media screen and (min-width:900px) {
-
-    #bestilling-style {
-        margin-left: 10rem;
-        margin-right: 10rem;
-        font-family: 'EB Garamond', serif;
-        font-size: 1.099rem;
-        color: #333333;
-    }
 
     #bestilling-style h2 {
         font-family: 'Noto Sans JP', sans-serif;
@@ -862,6 +867,9 @@ height: 2.5rem;
         grid-row: 1 / 2;
     }
 
+    .bestilknap {
+        margin-left: 37%;
+    }
 
 }
 
@@ -882,6 +890,11 @@ height: 2.5rem;
     justify-content: center;
 }
 
+#filter-collapse button {
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
 #filter {
     display: none;
     justify-content: center;
@@ -891,6 +904,8 @@ height: 2.5rem;
 
 #filter button {
     margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 1rem;
 }
 
 #opimg {
@@ -912,13 +927,22 @@ height: 2.5rem;
 }
 
 #opskrift-beskrivelse {
-    margin-left: 2rem;
+    /*margin-left: 2rem;*/
 }
 
 @media screen and (min-width:760px) {
     #recipe-main {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        margin: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin: 6rem;
+    }
+
+    #opskrifth1 {
+        margin-left: 6rem;
+    }
+
+    #opskrift-beskrivelse {
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
 
     #filter-collapse {
@@ -927,6 +951,12 @@ height: 2.5rem;
 
     #filter {
         display: block;
+        margin-left: 6rem;
+    }
+
+    #filter button {
+        margin-right: 2rem;
+        margin-top: 2rem;
     }
 }
 
@@ -938,7 +968,7 @@ height: 2.5rem;
     }
 
     #recipe-main {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
     .opskrift-article:hover {
@@ -972,7 +1002,6 @@ height: 2.5rem;
 .singletitle {
     text-align: center;
     margin-bottom: 3rem;
-    margin-top: -4.5rem;
 }
 
 .singletilbage {
@@ -1014,13 +1043,18 @@ li {
     flex-direction: row;
 }
 
-.ikon1,
-.ikon2,
-.ikon3 {
-    width: 5rem;
-}
-
 @media screen and (min-width:760px) {
+
+    .voresh1 {
+        margin-left: 1.5rem;
+    }
+
+    .singletitle {
+        text-align: center;
+        margin-bottom: 3rem;
+        margin-top: -4.5rem;
+    }
+
     .page-style #primary {
         background-color: #E2D5C7;
         padding-top: 0px;
@@ -1061,91 +1095,111 @@ li {
     .singletitle {
         margin-left: 7rem;
     }
+}
 
-    .ikon1,
-    .ikon2,
-    .ikon3 {
-        width: 10rem;
-    }
+/* SINGLE VIEW SLUT */
 
-    /* SINGLE VIEW SLUT */
+/* GALLERI */
 
-    /* GALLERI */
+#galleri-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-right: 2rem;
+}
 
+
+#glimg {
+    height: 18rem;
+    width: 18rem;
+    max-width: 18rem;
+    margin-bottom: 2rem;
+}
+
+
+
+@media screen and (min-width:760px) {
     #galleri-main {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 10px;
-        margin-right: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        margin-left: 6rem;
+        margin-right: 6rem;
+        grid-gap: 1rem;
     }
 
+    #gallerih1 {
+        margin-left: 6rem;
+    }
 
     #glimg {
-        height: 17rem;
-        width: 17rem;
-        margin-left: 1rem;
-        margin-bottom: 2rem;
+        height: 9rem;
+        width: 9rem;
+        margin-bottom: 0;
     }
 
     #galleribeskriv {
-        margin-left: 2rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+@media screen and (min-width:900px) {
+    #galleri-main {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
-    @media screen and (min-width:760px) {
-        #galleri-main {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        }
-
-        #glimg {
-            margin-bottom: auto;
-        }
+    #glimg {
+        height: 12rem;
+        width: 12rem;
+        cursor: pointer;
     }
 
-    @media screen and (min-width:900px) {
-        #galleri-main {
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        }
-
-        #glimg {
-            margin-left: 2rem;
-            cursor: pointer;
-            margin-bottom: 2rem;
-        }
-
-        #glimg:hover {
-            animation-name: opskrift_kf;
-            animation-duration: 0.3s;
-            animation-fill-mode: both;
-            animation-iteration-count: 1;
-        }
+    #glimg:hover {
+        animation-name: opskrift_kf;
+        animation-duration: 0.3s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
     }
 
-    /* GALLERI SLUT */
 
-    /*KONTAKTSIDE*/
+}
 
-    #kontakttekst,
-    #kontakttekst1,
-    #kontakttekst2,
-    #kontakttekst3 {
-        font-family: 'EB Garamond', serif;
-        font-size: 1.15rem;
-        color: #333333;
-        font-weight: 600;
+@media screen and (min-width:1300px) {
+    #galleri-main {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 
-    @media screen and (max-width:380) {
-        .elementor-section-wrap #emballage-wrapper .elementor-column-gap-default {
-            display: flex;
-            flex-direction: column-reverse;
-        }
+    #glimg {
+        height: 13rem;
+        width: 13rem;
     }
+}
 
-    /*KONTAKTSIDE SLUT*/
+/* GALLERI SLUT */
 
-    /*OMSIDE*/
+/*KONTAKTSIDE*/
 
-    /*
+#kontakttekst,
+#kontakttekst1,
+#kontakttekst2,
+#kontakttekst3 {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.15rem;
+    color: #333333;
+    font-weight: 600;
+}
+
+@media screen and (max-width:380) {
+    .elementor-section-wrap #emballage-wrapper .elementor-column-gap-default {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/*KONTAKTSIDE SLUT*/
+
+/*OMSIDE*/
+
+/*
 .elementor-386 .elementor-element.elementor-element-1e96a1f9 .elementor-heading-title h2 {
     font-size: 1.3rem;
     font-family: 'Noto Sans JP', sans-serif;
@@ -1154,18 +1208,18 @@ li {
 }
 */
 
-    /*OMSIDE SLUT*/
+/*OMSIDE SLUT*/
 
-    /* FJERN KNAPPER FRA INPUT FELTER */
+/* FJERN KNAPPER FRA INPUT FELTER */
 
-    /* Chrome, Safari, Edge, Opera */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
-    /* Firefox */
-    input[type=number] {
-        -moz-appearance: textfield;
-    }
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

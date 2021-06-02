@@ -27,12 +27,12 @@ get_header();
 
 <div class="page-style">
     <!--    overskrift og beskrivelse på siden-->
-    <h1 class="voresh1">Opskrifter</h1>
+    <h1 id="opskrifth1" class="voresh1">Opskrifter</h1>
     <p id="opskrift-beskrivelse">Her kan du få inspiration til hvordan du selv kan lave dine egne plantebaserede retter. <br> Retterne er udarbejdet af Team Veatery, og de er alle enten vegetariske eller veganske. <br> Vi har opdelt retterne i årstider, så du kan se hvilke råvarer der er i sæson.</p>
 
     <!--    Denne knap bruges til at lave en kollapset filtreringsmanu når siden vises på en mobil-->
     <div id="filter-collapse">
-        <button class="buttons">Vælg filter</button>
+        <button class="buttons">Vælg sæson</button>
     </div>
 
     <!--    Her laves knappen, der viser alle opskrifter, og den får class = valgt-->
@@ -154,13 +154,14 @@ get_header();
 
     //Denne funktion aktiverer den gemte filtreringsmenu på mobil.
     function filterburger() {
-        let burger = document.querySelector("#filter-collapse button").addEventListener("click", () => {
+        let burger = document.querySelector("#filter-collapse button");
+        burger.addEventListener("click", () => {
             let filterGroup = document.querySelector("#filter");
             if (filterGroup.style.display === "") {
                 filterGroup.style.display = "flex";
             } else {
                 filterGroup.style.display = "";
-                burger.classList.remove("valgt")
+                burger.classList.remove("hashover");
             }
         })
     }
