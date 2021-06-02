@@ -359,6 +359,48 @@ p {
     }
 }
 
+@media (min-width: 1350px) {
+    #opskrift-section {
+        justify-content: center;
+        width: 80%;
+        margin-left: 8rem;
+        margin-bottom: 6rem;
+    }
+
+    #art-forside {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    #art-forside img {
+        height: 15rem;
+        margin-top: 1.5rem;
+    }
+
+    .blivinspireret {
+        text-align: center;
+    }
+
+    .voresvisionforside {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .ugens-stjerne {
+        margin-left: 6rem;
+        margin-right: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .ugens-stjerne img {
+        margin-top: 3rem;
+        max-width: none;
+        width: 120%;
+    }
+
+
+}
+
 @media (min-width: 1500px) {
     .bean-img {
         margin-left: 1rem;
@@ -477,6 +519,21 @@ p {
     #menu-beskrivelse {
         margin-left: 10rem;
         margin-bottom: 2.5rem;
+    }
+
+    @media screen and (min-width:1350px) {
+        #art-menu img {
+            margin-top: 0rem;
+        }
+
+        #txt {
+            margin-left: -3rem;
+            margin-right: 5rem;
+        }
+
+        .tak {
+            margin-left: 2rem;
+        }
     }
 }
 
