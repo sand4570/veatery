@@ -52,8 +52,8 @@ Author:      Sandie Petersen
     font-size: 3.5rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
-    margin-left: 1.5rem;
-    text-align: center;
+    margin-left: 0rem;
+    text-align: left;
     margin-bottom: 3rem;
 }
 
@@ -93,7 +93,7 @@ Author:      Sandie Petersen
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
     color: #333333;
-    margin-left: 2rem;
+    margin-left: 0rem;
     margin-top: 2rem;
 }
 
@@ -108,6 +108,7 @@ Author:      Sandie Petersen
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: normal;
     color: #333333;
+    text-align: left;
 }
 
 .forsideimg {
@@ -161,7 +162,7 @@ p {
     margin-bottom: 2rem;
     margin-top: 2rem;
     border: solid;
-    border-width: 2.8px;
+    border-width: 1px;
     border-radius: 5px;
 }
 
@@ -261,6 +262,7 @@ p {
 
 #forside-button {
     margin: 0;
+    margin-top: 10rem;
 }
 
 
@@ -338,8 +340,34 @@ p {
     #art-forside img {
         height: 12rem;
         margin-top: 1.5rem;
-
     }
+
+
+    .forsideh1 {
+        font-size: 3.5rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: normal;
+        margin-left: 1.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .forsideh3 {
+        text-align: center;
+    }
+
+    .voresvisionforside img {
+        margin-top: 3.5rem;
+    }
+
+    #logo-splash {
+        margin-top: 10rem;
+    }
+
+    #forside-button {
+        margin-top: 16rem;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -417,6 +445,20 @@ p {
         margin-left: 36rem;
         font-weight: 500;
     }
+
+    #logo-splash {
+        margin-top: 6rem;
+    }
+
+    #forside-button {
+        margin-top: 7rem;
+    }
+
+    .forsideh1 {
+
+        margin-bottom: 1rem;
+    }
+
 }
 
 @media (min-width: 1500px) {
@@ -454,7 +496,7 @@ p {
     text-shadow: none;
     margin-bottom: 1rem;
     border: solid;
-    border-width: 2.8px;
+    border-width: 1px;
     border-radius: 5px;
 }
 
@@ -526,7 +568,10 @@ p {
         margin-left: 6rem;
         margin-bottom: 2.5rem;
     }
+
 }
+
+@media (min-width: 1300px) {}
 
 /* MENU SLUT */
 
@@ -539,7 +584,7 @@ p {
 #delivery,
 #payment {
     background-color: #f7ece0;
-    border: 2px solid #333333;
+    border: 1px solid #333333;
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -629,7 +674,7 @@ p {
     margin-left: 20%;
     cursor: pointer;
     border: solid;
-    border-width: 2.8px;
+    border-width: 1px;
     border-radius: 5px;
 }
 
@@ -725,7 +770,7 @@ p {
     width: 43px;
     height: 43px;
     border: solid;
-    border-width: 2.8px;
+    border-width: 1px;
     border-radius: 5px;
 }
 
@@ -771,7 +816,8 @@ height: 2.5rem;
 /** styling af radio buttons **/
 
 /** Da radiobuttons ikke umidelbart kan styles, er den bedste måde at gemme den originale butten og derefter oprette sin egen*/
-#delivery input, #payment input {
+#delivery input,
+#payment input {
     opacity: 0;
 }
 
@@ -913,8 +959,8 @@ height: 2.5rem;
     }
 
     .radio-contanier:hover input ~ .radio {
-    background-color: #D6CAB3;
-}
+        background-color: #D6CAB3;
+    }
 
 }
 
@@ -1005,7 +1051,7 @@ height: 2.5rem;
     }
 }
 
-/** media query for bestilling web **/
+/** media query for opskrifter web **/
 @media screen and (min-width:900px) {
     #opimg {
         height: 350px;
@@ -1088,6 +1134,15 @@ li {
     flex-direction: row;
 }
 
+.description {
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.ingredients {
+    margin-left: -1rem;
+}
+
 @media screen and (min-width:760px) {
 
     .voresh1 {
@@ -1139,6 +1194,20 @@ li {
     #col-left img {
         width: 29rem;
     }
+
+    .description {
+        margin-left: 2rem;
+        margin-right: 4rem;
+    }
+
+    .singleh3 {
+        margin-left: 2rem;
+    }
+
+    .singletilbage {
+        margin-left: 2rem;
+    }
+
 }
 
 /* SINGLE VIEW SLUT */

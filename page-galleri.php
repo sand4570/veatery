@@ -17,11 +17,11 @@ get_header();
 ?>
 
 <div id="page-galleri" class="page-style">
-<!--    Overskrift og beskrivelse på siden-->
+    <!--    Overskrift og beskrivelse på siden-->
     <h1 id="gallerih1" class="voresh1">Galleri</h1>
-    <p id="galleribeskriv">I vores galleri kan du nyde de smukke, plantebaserede retter. <br>Hop forbi vores Instagram og se mere!</p>
+    <p id="galleribeskriv">I vores galleri kan du nyde de smukke, plantebaserede retter. <br>Kig forbi vores Instagram og se mere!</p>
 
-<!--    Section hvor indholdet skal sættes ind-->
+    <!--    Section hvor indholdet skal sættes ind-->
     <section id="galleri-main"></section>
 
 </div>
