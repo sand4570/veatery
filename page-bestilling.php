@@ -64,13 +64,13 @@ get_header();
         <section id="delivery">
             <h2>Levering</h2>
 
-            <label class="radio-container" for="del1">Afhentning på Staldgade 11 (Gratis)
-                <input type="radio" id="del1" name="delivery" value="0">
+            <label class="radio-contanier">Afhentning på Staldgade 11 (Gratis)
+                <input type="radio"name="delivery" value="0">
                 <span class="radio"></span>
             </label><br>
 
-            <label class="radio-container" for="del2">Levering med byexpressen (30kr/km)
-                <input type="radio" id="del2" name="delivery" value="30">
+            <label class="radio-contanier">Levering med byexpressen (30kr/km)
+                <input type="radio" name="delivery" value="30">
                 <span class="radio"></span>
             </label>
 
@@ -80,13 +80,13 @@ get_header();
         <section id="payment">
             <h2>Betaling</h2>
 
-            <label class="radio-container" for="pay1">Kontant ved afhentning
-                <input type="radio" id="pay1" name="payment" value="0">
+            <label class="radio-contanier">Kontant ved afhentning
+                <input type="radio" name="payment" value="0">
                 <span class="radio"></span>
             </label><br>
 
-            <label class="radio-container" for="pay2">Mobilepay
-                <input type="radio" id="pay2" name="payment" value="1">
+            <label class="radio-contanier">Mobilepay
+                <input type="radio" name="payment" value="1">
                 <span class="radio"></span>
             </label>
 

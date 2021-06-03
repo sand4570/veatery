@@ -417,9 +417,6 @@ p {
         margin-left: 36rem;
         font-weight: 500;
     }
-
-
-
 }
 
 @media (min-width: 1500px) {
@@ -445,8 +442,6 @@ p {
     margin-bottom: 2rem;
     padding: 1rem;
 }
-
-
 
 .menubutton {
     font-family: 'Noto Sans JP', sans-serif;
@@ -773,6 +768,51 @@ height: 2.5rem;
     border-color: #58685e;
 }
 
+/** styling af radio buttons **/
+
+/** Da radiobuttons ikke umidelbart kan styles, er den bedste måde at gemme den originale butten og derefter oprette sin egen*/
+#delivery input, #payment input {
+    opacity: 0;
+}
+
+.radio-contanier {
+    position: relative;
+    padding-left: 1.7rem;
+}
+
+.radio {
+    left: 0;
+    top: 0.45rem;
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #e2d5c7;
+}
+
+
+
+
+.radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/** Her benytter vi ~også kendt som css general sibling selctor, denne selector alle efterfølgende søskende af med den valgte class, så længe de har samme parent. **/
+.radio-contanier input:checked ~ .radio:after {
+    display: block;
+}
+
+.radio-contanier .radio:after {
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #58685e;
+}
+
 /** bestilling levering slut **/
 
 /**media query for bestilling tablet **/
@@ -871,6 +911,10 @@ height: 2.5rem;
     .bestilknap {
         margin-left: 37%;
     }
+
+    .radio-contanier:hover input ~ .radio {
+    background-color: #D6CAB3;
+}
 
 }
 
