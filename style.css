@@ -392,7 +392,7 @@ p {
     }
 
     .bean-img {
-        margin-top: 3rem;
+        margin-top: 0;
         max-width: none;
         width: 35rem;
     }
@@ -1037,8 +1037,8 @@ li {
     .page-style #primary {
         background-color: #E2D5C7;
         padding-top: 0px;
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
         max-width: 80vw;
     }
 
@@ -1060,19 +1060,18 @@ li {
     }
 
     .page-style #primary {
-        margin-left: 10rem;
-        margin-right: 10rem;
-        max-width: 80vw;
         margin-bottom: 2rem;
     }
 
     #col-left img {
         margin-left: 2rem;
-        width: 30rem;
+        width: 22rem;
     }
+}
 
-    .singletitle {
-        margin-left: 7rem;
+@media screen and (min-width:1300px) {
+    #col-left img {
+        width: 29rem;
     }
 }
 
