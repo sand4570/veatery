@@ -13,6 +13,10 @@ Author:      Sandie Petersen
 
 /* GENNEREL */
 
+html {
+    overflow-x: hidden;
+}
+
 .elementor-177 .elementor-element.elementor-element-9009fbd.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated p {
     font-family: 'Noto Sans JP', sans-serif;
 }
