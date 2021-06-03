@@ -228,7 +228,13 @@ p {
 .ugens-stjerne {
     margin-top: 4rem;
     flex-direction: column-reverse;
+
 }
+
+.ugens-stjerne h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 
 #art-forside p {
     font-family: 'Noto Sans JP', sans-serif;
@@ -304,9 +310,17 @@ p {
         flex-direction: row;
     }
 
+
+    .ugens-stjerne h3 {
+        margin-left: 23rem;
+    }
+
+
     .bean-img {
         margin-left: 1rem;
         max-width: 25rem;
+        float: left;
+        margin-right: 2rem;
     }
 
     #opskrift-section {
@@ -322,8 +336,9 @@ p {
     }
 
     #art-forside img {
-        height: 13rem;
+        height: 12rem;
         margin-top: 1.5rem;
+
     }
 }
 
@@ -389,13 +404,20 @@ p {
 
     .ugens-stjerne {
         margin-bottom: 2rem;
+        margin-top: 6rem;
     }
 
     .bean-img {
-        margin-top: 0;
+        margin-top: -3rem;
         max-width: none;
         width: 35rem;
     }
+
+    .ugens-stjerne h3 {
+        margin-left: 36rem;
+        font-weight: 500;
+    }
+
 
 
 }
