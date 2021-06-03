@@ -571,7 +571,14 @@ p {
 
 }
 
-@media (min-width: 1300px) {}
+@media (min-width: 1300px) {
+
+    .menu-image {
+        grid-column: 1 / 2;
+        height: 400px;
+        width: 400px;
+    }
+}
 
 /* MENU SLUT */
 
@@ -664,45 +671,7 @@ p {
     color: #909d82;
 }
 
-.bestilknap {
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #58685e;
-    border-color: #58685e;
-    background-color: #E2D5C7;
-    font-weight: bold;
-    padding: 10px 60px 10px 60px;
-    margin-left: 20%;
-    cursor: pointer;
-    border: solid;
-    border-width: 1px;
-    border-radius: 5px;
-}
 
-
-.bestilknap:hover {
-    color: #E2D5C7;
-    border-color: #E2D5C7;
-    background-color: #58685e;
-
-}
-
-.bestilknap:visited {
-    color: #E2D5C7;
-    border-color: #E2D5C7;
-    background-color: #58685e;
-}
-
-.bestilknap:active {
-    color: #E2D5C7;
-    border-color: #E2D5C7;
-    background-color: #58685e;
-}
-
-
-.bestilknap:focus {
-    outline: none;
-
-}
 
 /** bestilling personlige oplysninger slut **/
 
@@ -861,6 +830,50 @@ height: 2.5rem;
 
 /** bestilling levering slut **/
 
+#button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.bestilknap {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #58685e;
+    border-color: #58685e;
+    background-color: #E2D5C7;
+    font-weight: bold;
+    padding: 10px 60px 10px 60px;
+    cursor: pointer;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+
+.bestilknap:hover {
+    color: #E2D5C7;
+    border-color: #E2D5C7;
+    background-color: #58685e;
+
+}
+
+.bestilknap:visited {
+    color: #E2D5C7;
+    border-color: #E2D5C7;
+    background-color: #58685e;
+}
+
+.bestilknap:active {
+    color: #E2D5C7;
+    border-color: #E2D5C7;
+    background-color: #58685e;
+}
+
+
+.bestilknap:focus {
+    outline: none;
+
+}
+
 /**media query for bestilling tablet **/
 @media screen and (min-width:760px) {
     #bestilling-style {
@@ -874,10 +887,6 @@ height: 2.5rem;
     #bestil-beskriv {
         margin-left: 6rem;
         margin-right: 6rem;
-    }
-
-    .bestilknap {
-        margin-left: 35%;
     }
 
     #h1-bestilling {
@@ -952,10 +961,6 @@ height: 2.5rem;
     #counter input {
         grid-column: 4 / 5;
         grid-row: 1 / 2;
-    }
-
-    .bestilknap {
-        margin-left: 37%;
     }
 
     .radio-contanier:hover input ~ .radio {

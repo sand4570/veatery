@@ -65,7 +65,7 @@ get_header();
             <h2>Levering</h2>
 
             <label class="radio-contanier">Afhentning på Staldgade 11 (Gratis)
-                <input type="radio"name="delivery" value="0">
+                <input type="radio" name="delivery" value="0">
                 <span class="radio"></span>
             </label><br>
 
@@ -93,9 +93,11 @@ get_header();
         </section>
 
         <!--        knap der gennemfører bestilling-->
-        <a href="https://neanderpetersen.dk/kea/10_eksamen/veatery/tak/">
-            <button class="bestilknap">BESTIL</button>
-        </a>
+        <div id="button-wrapper">
+            <a href="https://neanderpetersen.dk/kea/10_eksamen/veatery/tak/">
+                <button class="bestilknap">BESTIL</button>
+            </a>
+        </div>
     </div>
 </div>
 
